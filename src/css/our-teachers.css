@@ -14,7 +14,7 @@
   }
 }
 /* TITLE */
-.our-teachers__title {
+.our-teachers-title {
   margin-bottom: 16px;
   font-size: 32px;
   font-weight: 700;
@@ -22,17 +22,17 @@
   letter-spacing: -0.02em;
 }
 @media only screen and (min-width: 768px) {
-  .our-teachers__title {
+  .our-teachers-title {
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: -0.02em;
   }
 }
 
-.our-teachers__title--accent {
+.our-teachers-title-accent {
   position: relative;
 }
-.our-teachers__title--accent::after {
+.our-teachers-title-accent::after {
   position: absolute;
   z-index: -1;
   left: -2px;
@@ -41,89 +41,101 @@
   width: calc(100% + 4px);
   height: 20px;
   border-radius: 8px;
-  background: #bee8cc;
+  background: var(--soft-green);
 }
 /* SECTION DESCRIPTION */
-.our-teachers__description {
+.our-teachers-description {
   margin-bottom: 40px;
-  color: rgba(18, 20, 23, 0.5);
+
+  color: var(--soft-black);
+
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
 }
 @media only screen and (min-width: 768px) {
-  .our-teachers__description {
+  .our-teachers-description {
     margin-bottom: 64px;
+
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: -0.02em;
   }
 }
 @media only screen and (min-width: 768px) {
-  .our-teachers__description {
+  .our-teachers-description {
     margin-left: auto;
     margin-right: auto;
+
     max-width: 710px;
   }
 }
 /* SECTION LIST */
 @media only screen and (min-width: 768px) {
-  .our-teachers__list {
+  .our-teachers-list {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+
     padding: 0 64px;
   }
 }
 
 /* SECTION LIST ITEM*/
 @media only screen and (max-width: 767.98px) {
-  .our-teachers__item {
+  .our-teachers-item {
     margin-bottom: 40px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .our-teachers__item {
+  .our-teachers-item {
     flex-basis: calc((100% - 32px) / 2);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .our-teachers__item {
+  .our-teachers-item {
     flex-basis: calc((100% - (32px * 3)) / 4);
   }
 }
 /* SECTION LIST ITEM THUMB*/
-.our-teachers__item-thumb {
-  margin: 0 auto 16px;
+.our-teachers-item-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin: 0 auto 16px;
+
   width: 150px;
   height: 150px;
+
+  background-color: var(--grey-bg-image);
+
   border-radius: 50%;
   border: none;
   overflow: hidden;
-  background-color: rgb(128, 127, 127);
 }
 /* SECTION LIST ITEM TITLE*/
-.our-teachers__item-title {
+.our-teachers-item-title {
   margin-bottom: 8px;
+
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
 /* SECTION LIST ITEM DESCRIPTION*/
-.our-teachers__item-description {
-  color: rgba(18, 20, 23, 0.5);
+.our-teachers-item-description {
+  color: var(--soft-black);
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: -0.02em;
+
   text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
-  .our-teachers__item-description {
+  .our-teachers-item-description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.02em;
