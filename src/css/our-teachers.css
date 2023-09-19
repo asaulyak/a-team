@@ -7,18 +7,10 @@
   .our-teachers {
     padding: 50px 0;
   }
-  .our-teachers .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
 }
 @media only screen and (min-width: 1280px) {
   .our-teachers {
     padding: 75px 0;
-  }
-  .our-teachers .container {
-    max-width: 1280px;
-    padding: 0 64px;
   }
 }
 /* TITLE */
