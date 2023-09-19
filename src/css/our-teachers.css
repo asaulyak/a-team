@@ -1,0 +1,61 @@
+.our-teachers {
+  padding: 40px 0 40px;
+  text-align: center;
+}
+.our-teachers__title {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+}
+.our-teachers__title--accent {
+  position: relative;
+}
+.our-teachers__title--accent::after {
+  position: absolute;
+  z-index: -1;
+  left: -2px;
+  bottom: 0;
+  content: '';
+  width: calc(100% + 4px);
+  height: 20px;
+  border-radius: 8px;
+  background: #bee8cc;
+}
+
+.our-teachers__description {
+  margin-bottom: 40px;
+  color: rgba(18, 20, 23, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+.our-teachers__item {
+  margin-bottom: 40px;
+}
+.our-teachers__item-thumb {
+  margin: 0 auto 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  background-color: rgb(128, 127, 127);
+}
+.our-teachers__item-title {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.our-teachers__item-description {
+  color: rgba(18, 20, 23, 0.5);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.02em;
+}
