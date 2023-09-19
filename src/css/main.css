@@ -56,3 +56,33 @@
     padding: 0 64px;
   }
 }
+
+.button {
+  padding: 14px 87px;
+  min-width: 295px;
+
+  border: 0;
+  border-radius: 12px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+
+  color: var(--white);
+  background-color: var(--green);
+
+  transition: background-color var(--animation-fast);
+}
+.button:hover {
+  background-color: #38ae5f;
+}
+
+@media only screen and (min-width: 768px) {
+  .button {
+    min-width: 306px;
+    padding: 16px 64px;
+
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}
