@@ -23,7 +23,7 @@
     "vite-plugin-html-inject": "^1.0.1"
   },
   "lint-staged": {
-    "*.{html,md}": [
+    "*.{html,md,css}": [
       "prettier --write"
     ]
   }
