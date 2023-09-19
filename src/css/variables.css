@@ -1,8 +1,10 @@
 :root {
   --black: #121417;
+  --soft-black: rgba(18, 20, 23, 0.50);;
   --green: #4DC274;
   --gree-linear: linear-gradient(85deg, #4DC274 2.25%, #BEE8CC 131.25%);
   --light-green: #D4FDE1;
+  --soft-green: #BEE8CC;
   --gray: #F3F5F6;
   --white: #fff;
   --animation-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
