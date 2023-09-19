@@ -1,7 +1,18 @@
+/* SECTION */
 .our-teachers {
-  padding: 40px 0 40px;
+  padding: 40px 0;
   text-align: center;
 }
+@media only screen and (min-width: 768px) {
+  .our-teachers {
+    padding: 50px 0;
+  }
+  .our-teachers .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+/* TITLE */
 .our-teachers__title {
   margin-bottom: 16px;
   font-size: 32px;
@@ -9,6 +20,15 @@
   line-height: 1.13;
   letter-spacing: -0.02em;
 }
+@media only screen and (min-width: 768px) {
+  .our-teachers__title {
+    font-size: 40px;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+}
+
 .our-teachers__title--accent {
   position: relative;
 }
@@ -23,7 +43,7 @@
   border-radius: 8px;
   background: #bee8cc;
 }
-
+/* SECTION DESCRIPTION */
 .our-teachers__description {
   margin-bottom: 40px;
   color: rgba(18, 20, 23, 0.5);
@@ -31,9 +51,35 @@
   font-weight: 400;
   line-height: 1.71;
 }
-.our-teachers__item {
-  margin-bottom: 40px;
+@media only screen and (min-width: 768px) {
+  .our-teachers__description {
+    margin-bottom: 64px;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: -0.02em;
+  }
 }
+/* SECTION LIST */
+@media only screen and (min-width: 768px) {
+  .our-teachers__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 0 64px;
+  }
+}
+/* SECTION LIST ITEM*/
+@media only screen and (max-width: 767.98px) {
+  .our-teachers__item {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .our-teachers__item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+}
+/* SECTION LIST THUMB*/
 .our-teachers__item-thumb {
   margin: 0 auto 16px;
   display: flex;
@@ -58,4 +104,13 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: -0.02em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .our-teachers__item-description {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+  }
 }
