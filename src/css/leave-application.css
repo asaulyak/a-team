@@ -1,0 +1,158 @@
+.leave-application {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 1024px;
+
+  margin: 0 auto;
+
+  margin-bottom: 150px;
+}
+.leave-application-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 64px;
+}
+.leave-application-heading-title {
+  margin-bottom: 16px;
+
+  color: #121417;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.leave-application-heading-text {
+  width: 709px;
+
+  color: rgba(18, 20, 23, 0.5);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+}
+.leave-application-content {
+  display: flex;
+  gap: 32px;
+}
+.leave-application-image-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 492px;
+  padding-bottom: 40px;
+
+  background-color: #4dc274;
+  border-radius: 30px;
+}
+.leave-application-image {
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+.leave-application-image-card-heading {
+  margin-bottom: 8px;
+
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.leave-application-image-card-text {
+  width: 452px;
+
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.leave-application-form {
+  display: flex;
+  flex-direction: column;
+
+  width: 500px;
+}
+.leave-application-form-field:nth-of-type(-n + 3) {
+  margin-bottom: 18px;
+}
+.leave-application-form-field:nth-of-type(n + 4) {
+  margin-bottom: 32px;
+}
+.leave-application-form-input {
+  width: 100%;
+
+  padding: 16px 18px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+}
+.leave-application-form-input:focus {
+  border-color: #4dc274;
+}
+.leave-application-form-input::placeholder,
+.leave-application-form-comment::placeholder {
+  color: #121417;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.leave-application-form-comment {
+  display: block;
+  width: 100%;
+
+  padding: 16px 18px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+}
+.leave-application-radio-heading {
+  display: block;
+  margin-bottom: 16px;
+
+  color: #121417;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.leave-application-form-radio-element {
+  margin-right: 16px;
+
+  color: #121417;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+}
+.leave-application-form-submit-button {
+  margin-bottom: 16px;
+  padding: 16px;
+
+  border: none;
+  border-radius: 12px;
+  background: #4dc274;
+
+  color: #fff;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.56;
+}
+.form-agreement-text {
+  color: rgba(18, 20, 23, 0.5);
+  font-size: 14px;
+  line-height: 1.71;
+}
