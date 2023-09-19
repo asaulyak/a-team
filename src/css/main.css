@@ -1,0 +1,42 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./variables.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./about-us.css');
+@import url('./our-lesson.css');
+@import url('./proposal-to-leave-application.css');
+@import url('./our-teachers.css');
+@import url('./leave-application.css');
+@import url('./reviews.css');
+@import url('./footer.css');
+
+:root {
+  font-family: 'Manrope', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: var(--black);
+  background-color: var(--white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
