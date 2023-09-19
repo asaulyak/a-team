@@ -40,3 +40,13 @@
   padding: 0 20px;
   margin: 0 auto;
 }
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    padding: 0 64px;
+  }
+}
