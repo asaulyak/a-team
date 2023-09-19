@@ -100,7 +100,7 @@
     flex-basis: calc((100% - (32px * 3)) / 4);
   }
 }
-/* SECTION LIST THUMB*/
+/* SECTION LIST ITEM THUMB*/
 .our-teachers__item-thumb {
   margin: 0 auto 16px;
   display: flex;
@@ -113,6 +113,7 @@
   overflow: hidden;
   background-color: rgb(128, 127, 127);
 }
+/* SECTION LIST ITEM TITLE*/
 .our-teachers__item-title {
   margin-bottom: 8px;
   font-size: 20px;
@@ -120,6 +121,7 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
+/* SECTION LIST ITEM DESCRIPTION*/
 .our-teachers__item-description {
   color: rgba(18, 20, 23, 0.5);
   font-size: 14px;
