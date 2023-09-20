@@ -1,47 +1,35 @@
 .leave-application {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  width: 1024px;
-
-  margin: 0 auto;
-
-  margin-bottom: 150px;
+  padding: 40px 0;
 }
+
 .leave-application-heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  margin-bottom: 64px;
+  margin-bottom: 20px;
 }
-.leave-application-heading-title {
-  margin-bottom: 16px;
 
-  color: #121417;
+.leave-application-heading-title {
+  margin-bottom: 14px;
+
+  color: var(--black);
   text-align: center;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.2;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.12;
   letter-spacing: -0.02em;
 }
-.leave-application-heading-text {
-  width: 709px;
 
-  color: rgba(18, 20, 23, 0.5);
+.leave-application-heading-text {
+  color: var(--soft-black);
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.67;
+  line-height: 1.71;
 }
+
 .leave-application-content {
   display: flex;
   gap: 32px;
 }
+
 .leave-application-image-card {
   position: relative;
 
@@ -54,6 +42,13 @@
   background-color: #4dc274;
   border-radius: 30px;
 }
+
+@media only screen and (max-width: 1279px) {
+  .leave-application-image-card {
+    display: none;
+  }
+}
+
 .leave-application-image {
   margin-bottom: 20px;
   border-radius: 30px;
@@ -61,7 +56,7 @@
 .leave-application-image-card-heading {
   margin-bottom: 8px;
 
-  color: #fff;
+  color: var(--white);
   text-align: center;
   font-size: 40px;
   font-style: normal;
@@ -80,79 +75,86 @@
 .leave-application-form {
   display: flex;
   flex-direction: column;
-
-  width: 500px;
 }
-.leave-application-form-field:nth-of-type(-n + 3) {
+
+.leave-application-form-field:not(:last-child) {
   margin-bottom: 18px;
 }
-.leave-application-form-field:nth-of-type(n + 4) {
-  margin-bottom: 32px;
-}
+
 .leave-application-form-input {
+  display: block;
   width: 100%;
 
   padding: 16px 18px;
 
   border-radius: 12px;
-  border: 1px solid rgba(18, 20, 23, 0.1);
+  border: 1px solid var(--soft-black);
 }
 .leave-application-form-input:focus {
   border-color: #4dc274;
 }
 .leave-application-form-input::placeholder,
 .leave-application-form-comment::placeholder {
-  color: #121417;
-  font-size: 16px;
+  color: var(--black);
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.28;
 }
 .leave-application-form-comment {
   display: block;
   width: 100%;
+  min-height: 94px;
 
   padding: 16px 18px;
 
   border-radius: 12px;
-  border: 1px solid rgba(18, 20, 23, 0.1);
+  border: 1px solid var(--soft-black);
+
+  resize: none;
 }
+
+.leave-application-form-field-teachers {
+  margin-bottom: 40px;
+}
+
 .leave-application-radio-heading {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 
-  color: #121417;
-  font-size: 20px;
+  color: var(--black);
+  font-size: 18px;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.33;
   letter-spacing: -0.02em;
 }
-.leave-application-form-radio-element {
-  margin-right: 16px;
 
-  color: #121417;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.33;
+.leave-application-form-teachers {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.leave-application-form-radio-element {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
   letter-spacing: -0.02em;
 }
 .leave-application-form-submit-button {
   margin-bottom: 16px;
-  padding: 16px;
-
-  border: none;
-  border-radius: 12px;
-  background: #4dc274;
-
-  color: #fff;
-  font-family: Manrope;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.56;
 }
-.form-agreement-text {
-  color: rgba(18, 20, 23, 0.5);
-  font-size: 14px;
-  line-height: 1.71;
+.leave-application-form-agreement-text {
+  color: var(--soft-black);
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 400;
 }
