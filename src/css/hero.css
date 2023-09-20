@@ -1,0 +1,110 @@
+.hero {
+  position: relative;
+  height: 709px;
+  padding-bottom: 72px;
+  max-width: 335px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: flex-end;
+  margin: 0 auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+  background:
+    linear-gradient(357deg, rgba(0, 0, 0, 0.4) 39.23%, rgba(0, 0, 0, 0) 66.28%),
+    url(<path-to-image>),
+    lightgray -566px -29.886px / 332.537% 104.761% no-repeat;
+  background-size: cover;
+}
+.container {
+  position: relative;
+}
+.hero-header {
+  max-width: 295px;
+  margin-bottom: 40px;
+  color: var(--white);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+.hero-header-english {
+  color: var(--soft-green);
+}
+.hero-button {
+  max-width: 295px;
+  display: flex;
+  justify-content: center;
+  padding: 14px 0;
+  border: 0;
+  border-radius: 12px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+
+  color: var(--white);
+  background-color: var(--green);
+
+  transition: background-color var(--animation-fast);
+}
+.hero-button:hover {
+  background-color: #38ae5f;
+}
+
+.scroll-to-bottom {
+  position: fixed;
+  z-index: 100;
+  right: 14px;
+  bottom: 14px;
+  cursor: pointer;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 38px;
+  height: 38px;
+  border-radius: 50px;
+
+  cursor: pointer;
+  border: none;
+  background-color: var(--white);
+  transition: background-color var(--animation-fast);
+}
+.scroll-to-bottom:hover {
+  background-color: var(--green);
+}
+.scroll-to-bottom-icon {
+  fill: var(--green);
+}
+.scroll-to-bottom-icon:hover {
+  fill: var(--white);
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 857px;
+    max-width: 768px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .hero-header {
+    max-width: 488px;
+  }
+  .hero-button {
+    max-width: 306px;
+
+    padding-top: 16px 0;
+
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero {
+    max-width: 1152px;
+    height: 629px;
+  }
+}
