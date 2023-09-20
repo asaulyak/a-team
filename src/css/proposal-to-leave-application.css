@@ -1,7 +1,106 @@
+/* PROPOSAL TO LEAVE AND APPLICATION */
 .proposal-section {
-  /* width: 335px;
-  height: 737px; */
+  padding: 40px 20px 64px;
 
   border-radius: 30px;
   background: var(--gree-linear);
+
+  overflow: hidden;
+}
+.proposal-appeal {
+  display: block;
+  margin-bottom: 65px;
+
+  font-size: 38px;
+  line-height: 1.05;
+
+  color: var(--white);
+}
+
+.proposal-accent {
+  color: var(--soft-green);
+}
+
+.proposal-content-wrap {
+  position: relative;
+  padding: 40px 20px;
+  transform-style: preserve-3d;
+
+  border-radius: 16px;
+  background-color: var(--white);
+}
+
+.proposal-content-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: inherit;
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateZ(-10px) rotate(11deg);
+}
+
+.proposal-content-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: inherit;
+  background: var(--light-green);
+  transform: translateZ(-10px) rotate(-9deg);
+}
+
+.proposal-aux-title {
+  margin-bottom: 20px;
+
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+
+.proposal-list {
+  margin-bottom: 20px;
+}
+
+.proposal-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.42;
+  letter-spacing: -0.02em;
+}
+
+.proposal-list-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.proposal-list-item-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+
+  background-image: url('../img/proposal/icon-check.svg');
+  /* TODO: delete background properties below */
+  /* background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+.button.proposal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 255px;
+  padding: 16px 58px;
 }
