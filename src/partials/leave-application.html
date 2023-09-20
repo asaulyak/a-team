@@ -1,5 +1,5 @@
 <section class="leave-application">
-  <div class="container">
+  <div class="container leave-application-container">
     <div class="leave-application-heading">
       <h2 class="leave-application-heading-title with-accent">
         Leave an <span class="accent">application</span>
@@ -18,14 +18,14 @@
         <img
           class="leave-application-image"
           srcset="
-            ../img/leave-application/leave-application-image.png    1x,
-            ../img/leave-application/leave-application-image@2x.png 2x
+            ./img/leave-application/leave-application-image.png    1x,
+            ./img/leave-application/leave-application-image@2x.png 2x
           "
-          src="../img/leave-application/leave-application-image.png"
+          src="./img/leave-application/leave-application-image.png"
           alt="Girl in headphones learning"
           loading="lazy"
         />
-        <h3 class="leave-application-image-card-heading">1000</h3>
+        <p class="leave-application-image-card-heading">1000</p>
         <p class="leave-application-image-card-text">
           of our online English language lessons! This journey has been full of
           discovery, growth and unforgettable moments, and we are happy to share
@@ -33,50 +33,52 @@
         </p>
       </div>
       <form class="leave-application-form">
-        <div class="leave-application-form-field">
-          <label>
-            <input
-              class="leave-application-form-input"
-              type="text"
-              name="user-name"
-              id="user-name"
-              placeholder="Name"
-              pattern="[A-Za-z] .{3,}"
-          /></label>
-        </div>
+        <div class="leave-application-form-text-fields">
+          <div class="leave-application-form-field">
+            <label>
+              <input
+                class="leave-application-form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Name"
+                pattern="[A-Za-z] .{3,}"
+            /></label>
+          </div>
 
-        <div class="leave-application-form-field">
-          <label>
-            <input
-              class="leave-application-form-input"
-              type="email"
-              name="user-email"
-              id="user-email"
-              placeholder="Email"
-          /></label>
-        </div>
+          <div class="leave-application-form-field">
+            <label>
+              <input
+                class="leave-application-form-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Email"
+            /></label>
+          </div>
 
-        <div class="leave-application-form-field">
-          <label>
-            <input
-              class="leave-application-form-input"
-              type="tel"
-              name="user-phone"
-              id="user-phone"
-              placeholder="Phone"
-          /></label>
-        </div>
+          <div class="leave-application-form-field">
+            <label>
+              <input
+                class="leave-application-form-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                placeholder="Phone"
+            /></label>
+          </div>
 
-        <div class="leave-application-form-field">
-          <label>
-            <textarea
-              class="leave-application-form-comment"
-              name="comment"
-              id="user-comment"
-              rows="3"
-              placeholder="Comment"
-            ></textarea>
-          </label>
+          <div class="leave-application-form-field">
+            <label>
+              <textarea
+                class="leave-application-form-comment"
+                name="comment"
+                id="user-comment"
+                rows="3"
+                placeholder="Comment"
+              ></textarea>
+            </label>
+          </div>
         </div>
 
         <div class="leave-application-form-field-teachers">
