@@ -35,27 +35,47 @@
   scroll-behavior: smooth;
 }
 
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+}
+
 .container {
-  max-width: 375px;
-  padding: 0 20px;
+  max-width: 335px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 374px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .container {
-    padding: 0 32px;
+    max-width: 709px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .container {
-    padding: 0 64px;
+    max-width: 1024px;
   }
 }
 
 .button {
   padding: 14px 87px;
-  min-width: 295px;
+  min-width: 280px;
 
   border: 0;
   border-radius: 12px;

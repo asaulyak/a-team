@@ -1,0 +1,140 @@
+/* SECTION */
+.our-teachers {
+  text-align: center;
+}
+
+/* TITLE */
+.our-teachers-title {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+}
+@media only screen and (min-width: 768px) {
+  .our-teachers-title {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+}
+
+.our-teachers-title-accent {
+  position: relative;
+}
+.our-teachers-title-accent::after {
+  position: absolute;
+  z-index: -1;
+  left: -2px;
+  bottom: 0;
+  content: '';
+  width: calc(100% + 4px);
+  height: 20px;
+  border-radius: 8px;
+  background: var(--soft-green);
+}
+/* SECTION DESCRIPTION */
+.our-teachers-description {
+  margin-bottom: 40px;
+
+  color: var(--soft-black);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+@media only screen and (min-width: 768px) {
+  .our-teachers-description {
+    margin-bottom: 64px;
+
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: -0.02em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .our-teachers-description {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 710px;
+  }
+}
+/* SECTION LIST */
+@media only screen and (min-width: 768px) {
+  .our-teachers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    max-width: 576px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .our-teachers-list {
+    max-width: 100%;
+  }
+}
+
+/* SECTION LIST ITEM*/
+@media only screen and (max-width: 767.98px) {
+  .our-teachers-item {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .our-teachers-item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .our-teachers-item {
+    flex-basis: calc((100% - (32px * 3)) / 4);
+  }
+}
+/* SECTION LIST ITEM THUMB*/
+.our-teachers-item-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto 16px;
+
+  width: 150px;
+  height: 150px;
+
+  background-color: var(--grey-bg-image);
+
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+}
+/* SECTION LIST ITEM TITLE*/
+.our-teachers-item-title {
+  margin-bottom: 8px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+/* SECTION LIST ITEM DESCRIPTION*/
+.our-teachers-item-description {
+  color: var(--soft-black);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.02em;
+
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .our-teachers-item-description {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+  }
+}
