@@ -1,18 +1,8 @@
 /* SECTION */
 .our-teachers {
-  padding: 40px 0;
   text-align: center;
 }
-@media only screen and (min-width: 768px) {
-  .our-teachers {
-    padding: 50px 0;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .our-teachers {
-    padding: 75px 0;
-  }
-}
+
 /* TITLE */
 .our-teachers-title {
   margin-bottom: 16px;
@@ -77,7 +67,14 @@
     flex-wrap: wrap;
     gap: 32px;
 
-    padding: 0 64px;
+    max-width: 576px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .our-teachers-list {
+    max-width: 100%;
   }
 }
 

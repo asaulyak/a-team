@@ -50,20 +50,26 @@
 }
 
 .container {
-  max-width: 375px;
-  padding: 0 20px;
+  max-width: 335px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 768px) {
+
+@media only screen and (max-width: 374px) {
   .container {
-    max-width: 768px;
-    padding: 0 32px;
+    max-width: 100%;
+    padding: 0 20px;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 709px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .container {
-    max-width: 1280px;
-    padding: 0 64px;
+    max-width: 1024px;
   }
 }
 
