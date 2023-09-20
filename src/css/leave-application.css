@@ -139,19 +139,49 @@
 }
 
 .leave-application-form-radio-element {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-
   color: var(--black);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: -0.02em;
 }
+
+.leave-application-form-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.leave-application-form-radio {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+  border: 2px solid var(--soft-black);
+
+  fill: transparent;
+
+  transition:
+    background-color var(--animation-fast),
+    fill var(--animation-fast),
+    border var(--animation-fast);
+}
+
+input[type='radio']:checked
+  + .leave-application-form-radio-label
+  .leave-application-form-radio {
+  fill: var(--green);
+  border-color: var(--green);
+}
+
 .leave-application-form-submit-button {
   margin-bottom: 16px;
 }
+
 .leave-application-form-agreement-text {
   color: var(--soft-black);
   font-size: 12px;
