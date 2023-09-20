@@ -17,12 +17,30 @@
   letter-spacing: -0.02em;
 }
 
+.leave-application-heading-title.with-accent {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .leave-application-heading-title.clean {
+    display: none;
+  }
+
+  .leave-application-heading-title.with-accent {
+    display: block;
+  }
+}
+
 .leave-application-heading-text {
   color: var(--soft-black);
   text-align: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
+
+  margin: 0 auto;
+
+  max-width: 709px;
 }
 
 .leave-application-content {
@@ -89,10 +107,15 @@
 
   border-radius: 12px;
   border: 1px solid var(--soft-black);
+  outline: none;
+
+  transition: border var(--animation-fast);
 }
-.leave-application-form-input:focus {
-  border-color: #4dc274;
+.leave-application-form-input:focus,
+.leave-application-form-comment:focus {
+  border-color: var(--green);
 }
+
 .leave-application-form-input::placeholder,
 .leave-application-form-comment::placeholder {
   color: var(--black);
@@ -110,6 +133,7 @@
 
   border-radius: 12px;
   border: 1px solid var(--soft-black);
+  outline: none;
 
   resize: none;
 }
@@ -139,22 +163,58 @@
 }
 
 .leave-application-form-radio-element {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-
   color: var(--black);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: -0.02em;
 }
+
+.leave-application-form-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.leave-application-form-radio {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+  border: 2px solid var(--soft-black);
+
+  fill: transparent;
+
+  cursor: pointer;
+
+  transition:
+    fill var(--animation-fast),
+    border var(--animation-fast);
+}
+
+input[type='radio']:checked
+  + .leave-application-form-radio-label
+  .leave-application-form-radio {
+  fill: var(--green);
+  border-color: var(--green);
+}
+
 .leave-application-form-submit-button {
   margin-bottom: 16px;
 }
+
 .leave-application-form-agreement-text {
   color: var(--soft-black);
   font-size: 12px;
   line-height: 1.33;
   font-weight: 400;
+}
+
+.leave-application-form-link {
+  text-decoration: underline;
 }
