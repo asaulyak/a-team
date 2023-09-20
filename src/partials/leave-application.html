@@ -42,7 +42,9 @@
                 name="user-name"
                 id="user-name"
                 placeholder="Name"
-                pattern="[A-Za-z] .{3,}"
+                required
+                minlength="3"
+                pattern="[A-Za-z]+"
             /></label>
           </div>
 
@@ -53,6 +55,8 @@
                 type="email"
                 name="user-email"
                 id="user-email"
+                required
+                pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
                 placeholder="Email"
             /></label>
           </div>
@@ -64,6 +68,9 @@
                 type="tel"
                 name="user-phone"
                 id="user-phone"
+                required
+                pattern="[0-9]{10,}"
+                minlength="10"
                 placeholder="Phone"
             /></label>
           </div>
@@ -75,6 +82,8 @@
                 name="comment"
                 id="user-comment"
                 rows="3"
+                required
+                minlength="3"
                 placeholder="Comment"
               ></textarea>
             </label>
