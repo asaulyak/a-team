@@ -2,8 +2,32 @@
   padding: 40px 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .leave-application {
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .leave-application {
+    padding: 75px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container.leave-application-container {
+    padding: 0 128px;
+  }
+}
+
 .leave-application-heading {
   margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .leave-application-heading {
+    margin-bottom: 64px;
+  }
 }
 
 .leave-application-heading-title {
@@ -17,11 +41,23 @@
   letter-spacing: -0.02em;
 }
 
+@media only screen and (min-width: 768px) {
+  .leave-application-heading-title {
+    margin-bottom: 16px;
+  }
+}
+
 .leave-application-heading-title.with-accent {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
+  .leave-application-heading-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
   .leave-application-heading-title.clean {
     display: none;
   }
@@ -39,8 +75,21 @@
   line-height: 1.71;
 
   margin: 0 auto;
+}
 
-  max-width: 709px;
+@media only screen and (min-width: 768px) {
+  .leave-application-heading-text {
+    max-width: 586px;
+
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .leave-application-heading-text {
+    max-width: 709px;
+  }
 }
 
 .leave-application-content {
@@ -55,7 +104,7 @@
   flex-direction: column;
   align-items: center;
   width: 492px;
-  padding-bottom: 40px;
+  height: 578px;
 
   background-color: var(--green);
   border-radius: 30px;
@@ -93,6 +142,9 @@
 .leave-application-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .leave-application-form-field:not(:last-child) {
@@ -101,6 +153,12 @@
 
 .leave-application-form-text-fields {
   margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .leave-application-form-text-fields {
+    margin-bottom: 32px;
+  }
 }
 
 .leave-application-form-input {
@@ -113,21 +171,27 @@
   border: 1px solid var(--soft-black);
   outline: none;
 
-  transition: border var(--animation-fast);
-}
-.leave-application-form-input:focus,
-.leave-application-form-comment:focus {
-  border-color: var(--green);
-}
-
-.leave-application-form-input::placeholder,
-.leave-application-form-comment::placeholder {
   color: var(--black);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.28;
+
+  transition: border var(--animation-fast);
 }
+
+@media only screen and (min-width: 768px) {
+  .leave-application-form-input {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.leave-application-form-input:focus,
+.leave-application-form-comment:focus {
+  border-color: var(--green);
+}
+
 .leave-application-form-comment {
   display: block;
   width: 100%;
@@ -146,6 +210,18 @@
   margin-bottom: 40px;
 }
 
+@media only screen and (min-width: 768px) {
+  .leave-application-form-field-teachers {
+    margin-bottom: 34px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .leave-application-form-field-teachers {
+    margin-bottom: 32px;
+  }
+}
+
 .leave-application-radio-heading {
   display: block;
   margin-bottom: 14px;
@@ -157,6 +233,14 @@
   letter-spacing: -0.02em;
 }
 
+@media only screen and (min-width: 768px) {
+  .leave-application-radio-heading {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+}
+
 .leave-application-form-teachers {
   display: flex;
   flex-direction: column;
@@ -164,6 +248,13 @@
   justify-content: flex-start;
   align-items: baseline;
   gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .leave-application-form-teachers {
+    flex-direction: row;
+    gap: 16px;
+  }
 }
 
 .leave-application-form-radio-element {
@@ -174,11 +265,24 @@
   letter-spacing: -0.02em;
 }
 
+@media only screen and (min-width: 768px) {
+  .leave-application-form-radio-element {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
 .leave-application-form-radio-label {
   display: flex;
   align-items: center;
   gap: 9px;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .leave-application-form-radio-label {
+    gap: 8px;
+  }
 }
 
 .leave-application-form-radio {
@@ -201,6 +305,13 @@
     border var(--animation-fast);
 }
 
+@media only screen and (min-width: 768px) {
+  .leave-application-form-radio {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 input[type='radio']:checked
   + .leave-application-form-radio-label
   .leave-application-form-radio {
@@ -217,6 +328,13 @@ input[type='radio']:checked
   font-size: 12px;
   line-height: 1.33;
   font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) {
+  .leave-application-form-agreement-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .leave-application-form-link {
