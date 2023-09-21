@@ -5,6 +5,7 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./fonts.css');
 @import url('./variables.css');
 @import url('./header.css');
 @import url('./hero.css');
@@ -17,43 +18,119 @@
 @import url('./footer.css');
 
 :root {
-  font-family: 'Manrope', Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  line-height: 24px;
-  font-weight: 400;
-
   color: var(--black);
   background-color: var(--white);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 
   scroll-behavior: smooth;
 }
 
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+}
+
 .container {
-  max-width: 375px;
-  padding: 0 20px;
+  max-width: 335px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 768px) {
+
+@media only screen and (max-width: 374px) {
   .container {
-    padding: 0 32px;
+    max-width: 100%;
+    padding: 0 20px;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 709px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .container {
-    padding: 0 64px;
+    max-width: 1024px;
+  }
+}
+
+.section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section {
+    padding: 75px 0;
+  }
+}
+
+.section-title {
+  margin-bottom: 16px;
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+}
+
+.section-title-accent {
+  position: relative;
+}
+
+.section-title-accent::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+
+  border-bottom: 20px solid var(--soft-green);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.section-description {
+  color: var(--soft-black);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-description {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: -0.02em;
   }
 }
 
 .button {
   padding: 14px 87px;
-  min-width: 295px;
+  min-width: 280px;
 
   border: 0;
   border-radius: 12px;
