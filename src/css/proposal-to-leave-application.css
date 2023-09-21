@@ -1,12 +1,14 @@
 /* PROPOSAL TO LEAVE AND APPLICATION */
-.proposal-section {
+.section.proposal-section {
   padding: 40px 20px 64px;
 
+  text-align: start;
   border-radius: 30px;
   background: var(--gree-linear);
 
   overflow: hidden;
 }
+
 .proposal-appeal {
   display: block;
   margin-bottom: 65px;
