@@ -1,0 +1,15 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main {
+  padding: 40px 30px;
+}
+
+p {
+  padding: 5px;
+}
