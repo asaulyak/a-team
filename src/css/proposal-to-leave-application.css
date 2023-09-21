@@ -1,45 +1,30 @@
 /* PROPOSAL TO LEAVE AN APPLICATION */
-/* TODO: add x2 images for background-image ? Is there a picture x2? */
 
+.section.proposal-section {
+  text-align: start;
+}
+
+/* PROPOSAL CONTAINER */
 .container.proposal-container {
-  padding: 40px 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .container.proposal-container {
-    padding: 50px 0;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .container.proposal-container {
-    max-width: 1152px;
-    padding: 75px 0;
-  }
-}
-
-.proposal-section {
   padding: 40px 20px 64px;
-
   border-radius: 16px;
   background: var(--gree-linear);
-
   overflow: hidden;
 }
-
 @media only screen and (min-width: 768px) {
-  .proposal-section {
+  .container.proposal-container {
     padding: 64px 18px 92px;
     border-radius: 30px;
   }
 }
-
 @media only screen and (min-width: 1280px) {
-  .proposal-section {
+  .container.proposal-container {
     padding: 64px 64px 142px;
+    max-width: 1152px;
   }
 }
 
+/* APPEAL TEXT */
 .proposal-appeal {
   display: block;
   margin-bottom: 65px;
@@ -49,13 +34,11 @@
 
   color: var(--white);
 }
-
 @media only screen and (min-width: 768px) and (max-width: 1279.98px) {
   .proposal-appeal {
     padding-left: 14px;
   }
 }
-
 @media only screen and (min-width: 768px) {
   .proposal-appeal {
     margin-bottom: 83px;
@@ -64,7 +47,6 @@
     line-height: 1.16;
   }
 }
-
 @media only screen and (min-width: 1280px) {
   .proposal-appeal {
     margin-bottom: 133px;
@@ -76,6 +58,7 @@
   color: var(--soft-green);
 }
 
+/* CONTENT WRAP */
 .proposal-content-wrap {
   position: relative;
   padding: 40px 20px;
@@ -84,7 +67,6 @@
   border-radius: 16px;
   background-color: var(--white);
 }
-
 @media only screen and (min-width: 768px) {
   .proposal-content-wrap {
     padding: 65px 32px 63px;
@@ -94,6 +76,29 @@
 @media only screen and (min-width: 1280px) {
   .proposal-content-wrap {
     padding: 64px;
+  }
+}
+
+.proposal-content-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: inherit;
+  background: var(--light-green);
+  transform: translateZ(-5px) rotate(-9deg);
+}
+@media only screen and (min-width: 1280px) {
+  .proposal-content-wrap::before {
+    top: 9px;
+    left: -23px;
+
+    width: 1050px;
+    height: 463px;
   }
 }
 
@@ -110,7 +115,6 @@
   background: rgba(255, 255, 255, 0.5);
   transform: translateZ(-10px) rotate(11deg);
 }
-
 @media only screen and (min-width: 1280px) {
   .proposal-content-wrap::after {
     top: 46px;
@@ -120,29 +124,7 @@
   }
 }
 
-.proposal-content-wrap::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  border-radius: inherit;
-  background: var(--light-green);
-  transform: translateZ(-10px) rotate(-9deg);
-}
-@media only screen and (min-width: 1280px) {
-  .proposal-content-wrap::before {
-    top: 9px;
-    left: -23px;
-
-    width: 1050px;
-    height: 463px;
-  }
-}
-
+/* AUX TITLE */
 .proposal-aux-title {
   margin-bottom: 20px;
 
@@ -163,6 +145,7 @@
   }
 }
 
+/* PROPOSAL LIST */
 .proposal-list-wrap {
   margin-bottom: 20px;
 }
@@ -192,47 +175,7 @@
   }
 }
 
-.proposal-decor-img-wrap {
-  display: none;
-}
-
-@media only screen and (min-width: 768px) {
-  .proposal-decor-img-wrap {
-    display: inline-block;
-    position: relative;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .proposal-decor-img {
-    position: absolute;
-    top: 29px;
-    left: 20px;
-    display: inline-block;
-    background-image: url('../img/proposal/books-stack.png');
-    width: 214px;
-    height: 263px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-
-@media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .proposal-decor-img {
-    background-image: url('../img/proposal/books-stack@2x.png');
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .proposal-decor-img {
-    top: -25px;
-    left: 92px;
-  }
-}
-
+/* PROPOSAL LIST ITEM */
 .proposal-list-item {
   display: flex;
   align-items: center;
@@ -283,6 +226,46 @@
   }
 }
 
+/* PROPOSAL DECOR IMAGE */
+.proposal-decor-img-wrap {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .proposal-decor-img-wrap {
+    display: inline-block;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-decor-img {
+    position: absolute;
+    top: 29px;
+    left: 20px;
+    display: inline-block;
+    background-image: url('../img/proposal/books-stack.png');
+    width: 214px;
+    height: 263px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .proposal-decor-img {
+    background-image: url('../img/proposal/books-stack@2x.png');
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .proposal-decor-img {
+    top: -25px;
+    left: 92px;
+  }
+}
+
+/* PROPOSAL BUTTON */
 .button.proposal-button {
   display: inline-flex;
   justify-content: center;
@@ -291,7 +274,6 @@
   min-width: 240px;
   padding: 14px 30px;
 }
-
 @media only screen and (min-width: 375px) {
   .button.proposal-button {
     padding-right: 58px;
