@@ -363,7 +363,6 @@ Mobile Menu
 
   background-color: var(--soft-black);
 
-  /* transform: translateX(100%); */
   transition: opacity var(--transition-dur-and-func);
   transition-duration: 200ms;
 
@@ -373,7 +372,6 @@ Mobile Menu
 }
 
 .mobile-backdrop.is-open {
-  /* transform: translateX(0); */
   opacity: 1;
   pointer-events: initial;
   visibility: visible;
