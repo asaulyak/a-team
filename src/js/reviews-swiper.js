@@ -2,63 +2,42 @@ import Swiper from 'swiper/bundle';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/bundle';
 import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
+import 'swiper/css/pagination';
 
 // init Swiper:
 const swiperContainer = document.querySelector('.swiper');
 
-let swiperReviews = null;
-
-const setSlidesHeight = function (swiper) {
-  let maxHeight = 0;
-
-  swiper.slides.forEach(function (slide) {
-    if (slide.offsetHeight > maxHeight) {
-      maxHeight = slide.offsetHeight;
-    }
-  });
-
-  swiper.slides.forEach(function (slide) {
-    slide.style.height = `${maxHeight}px`;
-    slide.style.height = `auto`;
-  });
-
-  swiper.update();
-};
 
 swiperReviews = new Swiper('.swiper', {
   modules: [Navigation, Pagination],
   spaceBetween: 20,
   loop: true,
   autoplay: {
-    delay: 500,
+    delay: 2500,
+    disableOnInteraction: false,
     },
-  
-   centeredSlides: true,
-  
-  speed: 2000,
-//   on: {
-//     init: function () {
-//       setSlidesHeight(this);
-//     },
-//     resize: function () {
-//       setSlidesHeight(this);
-//     },
-//     slideChange: function () {
-//       setSlidesHeight(this);
-//     },
-//   },
+    
+  speed: 1000,
+ 
   pagination: {
       el: '.swiper-pagination',
-      clickable: true,
+    clickable: true,
   },
   slidesPerView: 1,
+  preloadImages: false,
+  lazy: {
+    loadOnTransitionStart: false,
+    loadPrevNext:false,
+
+  },
   breakpoints: {
     768: {
       slidesPerView: 2,
+      spaceBetween: 32,
     },
-    1280: {
+    1279: {
       slidesPerView: 3,
+      spaceBetween: 32,
     },
   },
 });

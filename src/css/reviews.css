@@ -26,15 +26,6 @@
   }
 }
 
-/* SECTION LIST */
-@media only screen and (min-width: 768px) {
-  .reviews-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-  }
-}
-
 /* SECTION LIST ITEM*/
 .reviews-item {
   padding: 20px;
@@ -44,31 +35,15 @@
   border-radius: 16px;
   background: var(--gray);
 }
-/* @media only screen and (max-width: 767.98px) {
-  .reviews-item:not(:first-child) {
-    display: none;
-  }
-} */
+
 @media only screen and (min-width: 768px) {
   .reviews-item {
     padding: 32px 16px;
 
     min-height: 326px;
-
-    flex-basis: calc((100% - 32px) / 2);
   }
 }
 
-/* @media only screen and (max-width: 1279.98px) {
-  .reviews-item:last-child {
-    display: none;
-  }
-} */
-@media only screen and (min-width: 1280px) {
-  .reviews-item {
-    flex-basis: calc((100% - 2 * 32px) / 3);
-  }
-}
 .reviews-item-wrapper {
   display: flex;
   align-items: center;
@@ -159,6 +134,8 @@
 
 .swiper-pagination-bullet:hover,
 .swiper-pagination-bullet:focus {
+  --swiper-pagination-bullet-inactive-color: var(--green);
   outline-color: var(--green);
   opacity: 1;
+  transform: scale(1.05);
 }
