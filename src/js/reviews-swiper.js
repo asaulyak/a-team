@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 const swiperContainer = document.querySelector('.swiper');
 
 
-new Swiper('.swiper', {
+let swiperReviews = new Swiper('.swiper', {
   modules: [Navigation, Pagination],
   spaceBetween: 20,
   loop: true,
