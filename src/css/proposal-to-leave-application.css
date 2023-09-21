@@ -101,6 +101,12 @@
   justify-content: center;
   align-items: center;
 
-  min-width: 255px;
-  padding: 16px 58px;
+  min-width: 200px;
+  padding: 16px 30px;
+}
+
+@media only screen and (min-width: 375px) {
+  .button.proposal-button {
+    padding: 16px 58px;
+  }
 }
