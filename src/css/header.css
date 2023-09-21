@@ -363,8 +363,7 @@ Mobile Menu
 
   background-color: var(--soft-black);
 
-  transition: opacity var(--transition-dur-and-func);
-  transition-duration: 200ms;
+  transition: opacity var(--animation-fast);
 
   opacity: 0;
   visibility: hidden;
@@ -484,8 +483,8 @@ Mobile Menu
   width: 44px;
   height: 44px;
   transition:
-    background-color var(--transition-dur-and-func),
-    border var(--transition-dur-and-func);
+    background-color var(--animation-fast),
+    border var(--animation-fast);
 }
 
 .menu-socials-link {
@@ -505,8 +504,8 @@ Mobile Menu
   border-radius: 10px;
   background-color: var(--white);
   transition:
-    border-radius var(--transition-dur-and-func),
-    background-color var(--transition-dur-and-func);
+    border-radius var(--animation-fast),
+    background-color var(--animation-fast);
 }
 
 .menu-socials-link:hover .menu-socials-icon,
