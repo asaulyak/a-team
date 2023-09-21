@@ -148,15 +148,17 @@
   --swiper-pagination-bullet-height: 20px;
   --swiper-pagination-bullet-horizontal-gap: 10px;
 
+  outline: 2px solid transparent;
+  outline-offset: 4px;
+
   transform: scale(1);
   transition:
-    outline var(--animation-fast),
+    outline-color var(--animation-fast),
     opacity var(--animation-fast);
 }
 
 .swiper-pagination-bullet:hover,
 .swiper-pagination-bullet:focus {
-  outline: 2px solid var(--green);
-  outline-offset: 4px;
+  outline-color: var(--green);
   opacity: 1;
 }
