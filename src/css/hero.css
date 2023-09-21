@@ -1,29 +1,86 @@
 .hero {
-  position: relative;
-  height: 709px;
-  padding-bottom: 72px;
-  max-width: 335px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  justify-content: flex-end;
-  margin: 0 auto;
+  padding-bottom: 80px;
+}
+.hero .hero-container {
+  min-height: 709px;
+  padding: 20px;
+  padding-top: 425px;
+  padding-bottom: 14px;
+
+  border-radius: 16px;
 
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 16px;
-  background:
-    linear-gradient(357deg, rgba(0, 0, 0, 0.4) 39.23%, rgba(0, 0, 0, 0) 66.28%),
-    url(<path-to-image>),
-    lightgray -566px -29.886px / 332.537% 104.761% no-repeat;
   background-size: cover;
+
+  background-image: linear-gradient(
+      357deg,
+      rgba(0, 0, 0, 0.4) 39.23%,
+      rgba(0, 0, 0, 0) 66.28%
+    ),
+    url('./img/hero/bg-mobile.jpg');
 }
-.container {
-  position: relative;
+@media only screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('./img/hero/bg-mobile.jpg@2x.jpg');
+  }
 }
+@media only screen and (min-width: 768px) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('./img/hero/bg-tablet.jpg');
+  }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+  (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('./img/hero/bg-tablet@2x.jpg');
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('./img/hero/bg-desktop.jpg');
+  }
+}
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('./img/hero/bg-desktop@2x.jpg');
+  }
+}
+
 .hero-header {
   max-width: 295px;
   margin-bottom: 40px;
+
   color: var(--white);
   font-size: 38px;
   font-weight: 700;
@@ -32,33 +89,28 @@
 .hero-header-english {
   color: var(--soft-green);
 }
-.hero-button {
-  max-width: 295px;
+
+.hero-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero .hero-button {
+  padding: 14px 0;
   display: flex;
   justify-content: center;
-  padding: 14px 0;
-  border: 0;
-  border-radius: 12px;
-
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.71;
-
-  color: var(--white);
-  background-color: var(--green);
-
-  transition: background-color var(--animation-fast);
+  align-items: center;
 }
-.hero-button:hover {
-  background-color: #38ae5f;
+
+@media only screen and (min-width: 270px) {
+  .hero .hero-button {
+    width: 100%;
+    min-width: 250px;
+  }
 }
 
 .scroll-to-bottom {
-  position: fixed;
-  z-index: 100;
-  right: 14px;
-  bottom: 14px;
-  cursor: pointer;
+  margin-left: auto;
   padding: 0;
 
   display: flex;
@@ -85,26 +137,50 @@
 }
 @media screen and (min-width: 768px) {
   .hero {
-    height: 857px;
-    max-width: 768px;
-    justify-content: center;
-    align-items: flex-start;
+    padding-bottom: 100px;
+  }
+  .hero .hero-container {
+    max-width: 704px;
+    min-height: 857px;
+    padding: 32px;
+    padding-top: 260px;
   }
   .hero-header {
     max-width: 488px;
+    margin-bottom: 32px;
+
+    font-size: 60px;
+    line-height: 1.17;
   }
+  .hero-buttons-wrapper {
+    gap: 215px;
+  }
+
   .hero-button {
     max-width: 306px;
-
-    padding-top: 16px 0;
-
-    font-size: 18px;
-    line-height: 1.55;
+  }
+  .scroll-to-bottom {
+    width: 48px;
+    height: 48px;
+  }
+  .scroll-to-bottom-icon {
+    width: 24px;
+    height: 24px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .hero {
+    padding-bottom: 96px;
+  }
+  .hero .hero-container {
     max-width: 1152px;
-    height: 629px;
+    min-height: 629px;
+    padding-left: 64px;
+  }
+  .hero-header {
+    max-width: 584px;
+  }
+  .hero-buttons-wrapper {
+    gap: 83px;
   }
 }
