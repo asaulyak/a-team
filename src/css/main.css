@@ -145,7 +145,7 @@
   transition: background-color var(--animation-fast);
 }
 .button:hover {
-  background-color: #38ae5f;
+  background-color: var(--pressed-green);
 }
 
 @media only screen and (min-width: 768px) {

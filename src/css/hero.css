@@ -1,10 +1,3 @@
-.hero {
-  padding-bottom: 80px;
-  margin: 0 auto;
-  max-width: 335px;
-  min-height: 709px;
-}
-
 @media only screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -103,7 +96,7 @@
   align-items: center;
 }
 .hero .hero-button:focus {
-  background-color: #38ae5f;
+  background-color: var(--pressed-green);
 }
 
 @media only screen and (min-width: 270px) {
@@ -135,24 +128,18 @@
 .scroll-to-bottom:focus {
   background-color: var(--green);
 }
-.scroll-to-bottom-icon {
-  fill: var(--green);
-  transition: background-color var(--animation-fast);
-}
+
 .scroll-to-bottom:hover .scroll-to-bottom-icon,
 .scroll-to-bottom:focus .scroll-to-bottom-icon {
   fill: var(--white);
 }
+.scroll-to-bottom-icon {
+  fill: var(--green);
+  transition: fill var(--animation-fast);
+}
 @media screen and (min-width: 768px) {
-  .hero {
-    max-width: 768px;
-    padding-bottom: 100px;
-    max-height: 857px;
-    padding: 32px;
-  }
   .hero-container {
-    padding-top: 260px;
-    padding-left: 20px;
+    padding: 260px 32px 295px 32px;
   }
   .hero-header {
     max-width: 488px;
@@ -177,10 +164,8 @@
   }
 }
 @media only screen and (min-width: 1280px) {
-  .hero {
-    max-width: 1152px;
-    padding-bottom: 96px;
-    max-height: 629px;
+  .hero-container {
+    padding: 164px 32px 163px 64px;
   }
   .hero-header {
     max-width: 584px;
