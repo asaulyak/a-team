@@ -1,17 +1,14 @@
 .hero {
+  position: relative;
   padding-bottom: 80px;
-}
-.hero .hero-container {
+  margin: 0 auto;
+  max-width: 335px;
   min-height: 709px;
-  padding: 20px;
-  padding-top: 425px;
-  padding-bottom: 14px;
-
-  border-radius: 16px;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 16px;
 
   background-image: linear-gradient(
       357deg,
@@ -20,10 +17,11 @@
     ),
     url('../img/hero/bg-mobile.jpg');
 }
+
 @media only screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero .hero-container {
+  .hero {
     background-image: linear-gradient(
         357deg,
         rgba(0, 0, 0, 0.4) 39.23%,
@@ -33,7 +31,7 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  .hero .hero-container {
+  .hero {
     background-image: linear-gradient(
         357deg,
         rgba(0, 0, 0, 0.4) 39.23%,
@@ -45,7 +43,7 @@
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
   (min-width: 768px) and (min-device-pixel-ratio: 2),
   (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero .hero-container {
+  .hero {
     background-image: linear-gradient(
         357deg,
         rgba(0, 0, 0, 0.4) 39.23%,
@@ -55,7 +53,7 @@
   }
 }
 @media only screen and (min-width: 1280px) {
-  .hero .hero-container {
+  .hero {
     background-image: linear-gradient(
         357deg,
         rgba(0, 0, 0, 0.4) 39.23%,
@@ -67,7 +65,7 @@
 @media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
   (min-width: 1280px) and (min-device-pixel-ratio: 2),
   (min-width: 1280px) and (min-resolution: 2dppx) {
-  .hero .hero-container {
+  .hero {
     background-image: linear-gradient(
         357deg,
         rgba(0, 0, 0, 0.4) 39.23%,
@@ -76,30 +74,33 @@
       url('../img/hero/bg-desktop@2x.jpg');
   }
 }
+.hero-container {
+  padding: 20px;
+  padding-top: 425px;
+  padding-bottom: 72px;
+}
 
 .hero-header {
   max-width: 295px;
   margin-bottom: 40px;
+  text-align: left;
 
-  color: var(--white);
   font-size: 38px;
-  font-weight: 700;
   line-height: 1.05;
+  color: var(--white);
 }
 .hero-header-english {
   color: var(--soft-green);
 }
 
-.hero-buttons-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 .hero .hero-button {
   padding: 14px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.hero .hero-button:focus {
+  background-color: #38ae5f;
 }
 
 @media only screen and (min-width: 270px) {
@@ -110,8 +111,9 @@
 }
 
 .scroll-to-bottom {
-  margin-left: auto;
-  padding: 0;
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
 
   display: flex;
   justify-content: center;
@@ -119,30 +121,34 @@
 
   width: 38px;
   height: 38px;
-  border-radius: 50px;
+  border-radius: 50%;
 
   cursor: pointer;
   border: none;
   background-color: var(--white);
   transition: background-color var(--animation-fast);
 }
-.scroll-to-bottom:hover {
+.scroll-to-bottom:hover,
+.scroll-to-bottom:focus {
   background-color: var(--green);
 }
 .scroll-to-bottom-icon {
   fill: var(--green);
+  transition: background-color var(--animation-fast);
 }
-.scroll-to-bottom-icon:hover {
+.scroll-to-bottom-icon:hover,
+.scroll-to-bottom-icon:focus {
   fill: var(--white);
 }
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     padding-bottom: 100px;
-  }
-  .hero .hero-container {
-    max-width: 704px;
     min-height: 857px;
     padding: 32px;
+  }
+  .hero-container {
+    padding: 0;
     padding-top: 260px;
   }
   .hero-header {
@@ -152,14 +158,13 @@
     font-size: 60px;
     line-height: 1.17;
   }
-  .hero-buttons-wrapper {
-    gap: 215px;
-  }
 
   .hero-button {
     max-width: 306px;
   }
   .scroll-to-bottom {
+    right: 32px;
+    bottom: 32px;
     width: 48px;
     height: 48px;
   }
@@ -170,17 +175,11 @@
 }
 @media only screen and (min-width: 1280px) {
   .hero {
-    padding-bottom: 96px;
-  }
-  .hero .hero-container {
     max-width: 1152px;
+    padding-bottom: 96px;
     min-height: 629px;
-    padding-left: 64px;
   }
   .hero-header {
     max-width: 584px;
-  }
-  .hero-buttons-wrapper {
-    gap: 83px;
   }
 }
