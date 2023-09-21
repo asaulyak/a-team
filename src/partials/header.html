@@ -1,4 +1,20 @@
- <header class="header" id="home">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header" id="home">
       <div class="header-container container" id="header-top">
         <!-- Navigation -->
         <a href="" class="header-logo"
@@ -37,7 +53,7 @@
               aria-label="Facebook link"
             >
               <svg class="header-socials-icon" width="28" height="28">
-                <use href="./src/img/icons.svg#icon-facebook"></use>
+                <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -50,7 +66,7 @@
               aria-label="Instagram link"
             >
               <svg class="header-socials-icon" width="28" height="28">
-                <use href="./img/icons.svg#icon-instagram"></use>
+                <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -68,5 +84,116 @@
             </a>
           </li>
         </ul>
-			</div>>
-	</header>
+        <!-- Mobile Menu -->
+
+        <button
+          class="menu-open-button js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-open-btn
+        >
+          <svg
+            class="menu-open-icon"
+            width="32"
+            height="23"
+            stroke="var(--color-black)"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            role="img"
+          >
+            <use
+              class="menu-open-use"
+              xlink:href="./images/icons.svg#icon-Nav"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu container -->
+      <div class="backdrop is-hidden" data-menu-backdrop>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button
+            type="button"
+            class="menu-close-button js-close-menu"
+            data-menu-close-btn
+          >
+            <svg class="menu-close-icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-Nav"></use>
+            </svg>
+          </button>
+
+          <!-- Mobile Menu Navigation  -->
+
+          <nav class="menu-nav">
+            <ul class="menu-nav-list">
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#about-us">About us</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#our-lessons">Our lessons</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#teachers">Teachers</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#reviews">Reviews</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#leave-section">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Mobile Menu Socials -->
+
+          <ul class="menu-socials-list">
+            <li class="menu-socials-item">
+              <a
+                class="menu-socials-link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook icon"
+              >
+                <svg class="menu-socials-icon" width="28" height="28">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="menu-socials-item">
+              <a
+                class="menu-socials-link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram icon"
+              >
+                <svg class="menu-socials-icon" width="28" height="28">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-socials-item">
+              <a
+                class="menu-socials-link"
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="youtube icon"
+              >
+                <svg class="menu-socials-icon" width="28" height="28">
+                  <use href="./images/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <script defer src="./mobile-menu.js"></script>
+    <script src="./modal.js"></script>
+    <script src="./form.js"></script>
+    <script src="./mobile-icon-open.js"></script>
+  </body>
+</html>
