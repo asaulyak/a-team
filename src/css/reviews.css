@@ -44,11 +44,11 @@
   border-radius: 16px;
   background: var(--gray);
 }
-@media only screen and (max-width: 767.98px) {
+/* @media only screen and (max-width: 767.98px) {
   .reviews-item:not(:first-child) {
     display: none;
   }
-}
+} */
 @media only screen and (min-width: 768px) {
   .reviews-item {
     padding: 32px 16px;
@@ -59,11 +59,11 @@
   }
 }
 
-@media only screen and (max-width: 1279.98px) {
+/* @media only screen and (max-width: 1279.98px) {
   .reviews-item:last-child {
     display: none;
   }
-}
+} */
 @media only screen and (min-width: 1280px) {
   .reviews-item {
     flex-basis: calc((100% - 2 * 32px) / 3);
@@ -131,4 +131,32 @@
     font-size: 16px;
     line-height: 1.5;
   }
+}
+
+.swiper {
+  width: 100%;
+  cursor: pointer;
+}
+
+.swiper-wrapper {
+  padding-bottom: 60px;
+}
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-inactive-color: var(--grey-bg-image);
+  --swiper-pagination-color: var(--green);
+  --swiper-pagination-bullet-width: 20px;
+  --swiper-pagination-bullet-height: 20px;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+
+  transform: scale(1);
+  transition:
+    outline var(--animation-fast),
+    opacity var(--animation-fast);
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet:focus {
+  outline: 2px solid var(--green);
+  outline-offset: 4px;
+  opacity: 1;
 }
