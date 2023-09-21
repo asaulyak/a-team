@@ -75,9 +75,7 @@
   }
 }
 .hero-container {
-  padding: 20px;
-  padding-top: 425px;
-  padding-bottom: 72px;
+  padding: 425px 20px 72px 20px;
 }
 
 .hero-header {
@@ -148,8 +146,7 @@
     padding: 32px;
   }
   .hero-container {
-    padding: 0;
-    padding-top: 260px;
+    padding: 260px 0;
   }
   .hero-header {
     max-width: 488px;
