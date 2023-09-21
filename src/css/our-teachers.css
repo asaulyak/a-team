@@ -1,65 +1,14 @@
-/* SECTION */
-.our-teachers {
-  text-align: center;
-}
-
-/* TITLE */
-.our-teachers-title {
-  margin-bottom: 16px;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.13;
-  letter-spacing: -0.02em;
-}
-@media only screen and (min-width: 768px) {
-  .our-teachers-title {
-    font-size: 40px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-  }
-}
-
-.our-teachers-title-accent {
-  position: relative;
-}
-.our-teachers-title-accent::after {
-  position: absolute;
-  z-index: -1;
-  left: -2px;
-  bottom: 0;
-  content: '';
-  width: calc(100% + 4px);
-  height: 20px;
-  border-radius: 8px;
-  background: var(--soft-green);
-}
 /* SECTION DESCRIPTION */
 .our-teachers-description {
   margin-bottom: 40px;
-
-  color: var(--soft-black);
-
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
 }
 @media only screen and (min-width: 768px) {
   .our-teachers-description {
-    margin-bottom: 64px;
-
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: -0.02em;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .our-teachers-description {
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: 0 auto 64px;
     max-width: 710px;
   }
 }
+
 /* SECTION LIST */
 @media only screen and (min-width: 768px) {
   .our-teachers-list {
