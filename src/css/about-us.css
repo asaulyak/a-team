@@ -1,67 +1,39 @@
 .about-section {
-  /* text-align: center; */
-}
-
-.container {
-    min-width: 320px;
-    max-width: 375px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 128px;
-    padding-right: 128px;
-
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
 }
 
 .about-title-container {
-    max-width: 335px;
-    margin-bottom: 40px;
+  max-width: 335px;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
-   {
-    .about-title-container {
-          max-width: 704px;
-          margin-bottom: 64px;
-        }
+  .about-title-container {
+    max-width: 704px;
+
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: minwidthpx) {
+  .about-title-container {
   }
 }
 
 @media only screen and (min-width: 1280px) {
-    {
-    .about-title-container {
-      max-width: 832px;
-      /* margin-bottom: 64px; */
-    }
+  .about-title-container {
+    max-width: 832px;
+    /* margin-bottom: 64px; */
   }
 }
 
-
 .section-title {
-    color: #121417;
-    text-align: center;
-    font-family: Manrope;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.12;
-    letter-spacing: -0.02em;
-    margin-bottom: 16px;
+  color: var(--black);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -72,12 +44,11 @@
   }
 }
 
-
-.section-title-accent {
+.accent {
   position: relative;
 }
 
-.section-title-accent::after {
+.accent::after {
   position: absolute;
   z-index: -1;
   left: -2px;
@@ -90,14 +61,12 @@
 }
 
 .about-section-text {
-color: rgba(18, 20, 23, 0.50);
-text-align: center;
-font-family: Manrope;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 1.71;
-max-width: 334px;
+  color: rgba(18, 20, 23, 0.5);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  max-width: 334px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -108,81 +77,62 @@ max-width: 334px;
   }
 }
 
-
-
 .about-list-container {
   position: relative;
-  }
+}
 
 .about-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    counter-reset: item-counter 0;
-    list-style-type: none;
-    
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  counter-reset: item-counter 0;
+  list-style-type: none;
 }
 
 @media only screen and (min-width: 768px) {
   .about-list {
     gap: 32px;
-    
   }
 }
 
-
 .about-item::before {
-  content: "0"counter(item-counter);
+  content: '0' counter(item-counter);
   counter-increment: item-counter;
-  color: #4DC274;    
-  font-size: 28px;    
+  color: var(--green);
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: -0.02em;
   margin-bottom: 16px;
   display: block;
-  
 }
-
-
-
-
 
 .about-item {
-    width: calc((100% - 32px) / 2) ;
-    height: 160px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    background: #F3F5F6;
-    padding: 32px;
-    
+  width: calc((100% - 32px) / 2);
+  height: 160px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #f3f5f6;
+  padding: 32px;
 }
 
-
-
-
-.about-number {}
-
 .about-text {
-    width: 271px;
-    height: 48px;
-    flex-shrink: 0;
-    color: #121417;
-    font-family: Manrope;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    padding-left: 32px;
-    
+  width: 271px;
+  height: 48px;
+  flex-shrink: 0;
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  padding-left: 32px;
 }
 
 .about-emoji {
   width: 335px;
   height: 313px;
   border-radius: 16px;
-  background: #4DC274;
+  background: var(--green);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,7 +140,7 @@ max-width: 334px;
 
 @media only screen and (min-width: 768px) {
   .about-emoji {
-    width: 704px;
+    /* width: 704px; */
     height: 243px;
   }
 }
