@@ -1,4 +1,5 @@
 /* PROPOSAL TO LEAVE AN APPLICATION */
+/* TODO: add x2 images for background-image ? Is there a picture x2? */
 .proposal-section {
   padding: 40px 20px 64px;
 
@@ -96,8 +97,47 @@
   }
 }
 
-.proposal-list {
+.proposal-list-wrap {
   margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .proposal-list-wrap {
+    display: flex;
+    margin-bottom: 32px;
+  }
+}
+
+.proposal-list {
+  display: inline-block;
+  max-width: 449px;
+}
+
+.proposal-decor-img-wrap {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-decor-img-wrap {
+    display: inline-block;
+    position: relative;
+  }
+}
+
+.proposal-decor-img {
+}
+@media only screen and (min-width: 768px) {
+  .proposal-decor-img {
+    position: absolute;
+    top: 29px;
+    left: 20px;
+    display: inline-block;
+    background-image: url('../img/proposal/books-stack.png');
+    width: 214px;
+    height: 263px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .proposal-list-item {
@@ -110,9 +150,23 @@
   line-height: 1.42;
   letter-spacing: -0.02em;
 }
+@media only screen and (min-width: 768px) {
+  .proposal-list-item {
+    gap: 16px;
+  }
+}
 
 .proposal-list-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-list-item-text {
+    font-size: 20px;
+
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
 }
 
 .proposal-list-item-icon {
@@ -121,23 +175,35 @@
   height: 20px;
 
   background-image: url('../img/proposal/icon-check.svg');
+  background-size: contain;
   /* TODO: delete background properties below */
-  /* background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+}
+@media only screen and (min-width: 768px) {
+  .proposal-list-item-icon {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .button.proposal-button {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 
   min-width: 200px;
-  padding: 16px 30px;
+  padding: 14px 30px;
 }
 
 @media only screen and (min-width: 375px) {
   .button.proposal-button {
-    padding: 16px 58px;
+    padding-right: 58px;
+    padding-left: 58px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .button.proposal-button {
+    padding: 16px 64px;
   }
 }
