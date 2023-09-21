@@ -1,9 +1,27 @@
 /* PROPOSAL TO LEAVE AN APPLICATION */
 /* TODO: add x2 images for background-image ? Is there a picture x2? */
+
+.container.proposal-container {
+  padding: 40px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .container.proposal-container {
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container.proposal-container {
+    max-width: 1152px;
+    padding: 75px 0;
+  }
+}
+
 .proposal-section {
   padding: 40px 20px 64px;
 
-  border-radius: 30px;
+  border-radius: 16px;
   background: var(--gree-linear);
 
   overflow: hidden;
@@ -12,6 +30,13 @@
 @media only screen and (min-width: 768px) {
   .proposal-section {
     padding: 64px 18px 92px;
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-section {
+    padding: 64px 64px 142px;
   }
 }
 
@@ -25,13 +50,25 @@
   color: var(--white);
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .proposal-appeal {
+    padding-left: 14px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .proposal-appeal {
-    padding: 0 14px;
     margin-bottom: 83px;
 
     font-size: 60px;
     line-height: 1.16;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-appeal {
+    margin-bottom: 133px;
+    width: 776px;
   }
 }
 
@@ -51,6 +88,12 @@
 @media only screen and (min-width: 768px) {
   .proposal-content-wrap {
     padding: 65px 32px 63px;
+    border-radius: 30px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .proposal-content-wrap {
+    padding: 64px;
   }
 }
 
@@ -68,6 +111,15 @@
   transform: translateZ(-10px) rotate(11deg);
 }
 
+@media only screen and (min-width: 1280px) {
+  .proposal-content-wrap::after {
+    top: 46px;
+
+    width: 1011px;
+    height: 402px;
+  }
+}
+
 .proposal-content-wrap::before {
   content: '';
   position: absolute;
@@ -80,6 +132,15 @@
   border-radius: inherit;
   background: var(--light-green);
   transform: translateZ(-10px) rotate(-9deg);
+}
+@media only screen and (min-width: 1280px) {
+  .proposal-content-wrap::before {
+    top: 9px;
+    left: -23px;
+
+    width: 1050px;
+    height: 463px;
+  }
 }
 
 .proposal-aux-title {
@@ -96,6 +157,11 @@
     line-height: 1.2;
   }
 }
+@media only screen and (min-width: 1280px) {
+  .proposal-aux-title {
+    margin-bottom: 42px;
+  }
+}
 
 .proposal-list-wrap {
   margin-bottom: 20px;
@@ -106,10 +172,24 @@
     margin-bottom: 32px;
   }
 }
+@media only screen and (min-width: 1280px) {
+  .proposal-list-wrap {
+    margin-bottom: 39px;
+  }
+}
 
 .proposal-list {
   display: inline-block;
-  max-width: 449px;
+}
+@media only screen and (min-width: 768px) {
+  .proposal-list {
+    max-width: 449px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .proposal-list {
+    max-width: 654px;
+  }
 }
 
 .proposal-decor-img-wrap {
@@ -123,8 +203,6 @@
   }
 }
 
-.proposal-decor-img {
-}
 @media only screen and (min-width: 768px) {
   .proposal-decor-img {
     position: absolute;
@@ -137,6 +215,13 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-decor-img {
+    top: -25px;
+    left: 92px;
   }
 }
 
@@ -153,6 +238,12 @@
 @media only screen and (min-width: 768px) {
   .proposal-list-item {
     gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-list-item:nth-child(2) {
+    max-width: 462px;
   }
 }
 
@@ -176,9 +267,6 @@
 
   background-image: url('../img/proposal/icon-check.svg');
   background-size: contain;
-  /* TODO: delete background properties below */
-  /* background-position: center; */
-  /* background-repeat: no-repeat; */
 }
 @media only screen and (min-width: 768px) {
   .proposal-list-item-icon {
