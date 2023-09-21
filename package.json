@@ -6,12 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/a-team/",
-    "preview": "vite preview",
-    "prepare": "npx husky install"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "glob": "^8.1.0",
-    "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "vite": "^4.0.5"

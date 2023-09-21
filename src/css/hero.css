@@ -70,12 +70,22 @@
     ),
     url('../img/hero/bg-mobile.jpg');
 }
+
 @media only screen and (max-width: 375px) {
   .hero .hero-container {
     padding: 425px 20px 72px;
   }
 }
-
+@media screen and (min-width: 768px) {
+  .hero-container {
+    padding: 260px 32px 295px 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-container {
+    padding: 164px 32px 163px 64px;
+  }
+}
 .hero-header {
   max-width: 295px;
   margin-bottom: 40px;
@@ -88,6 +98,20 @@
 .hero-header-english {
   color: var(--soft-green);
 }
+@media screen and (min-width: 768px) {
+  .hero-header {
+    max-width: 488px;
+    margin-bottom: 32px;
+
+    font-size: 60px;
+    line-height: 1.17;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-header {
+    max-width: 584px;
+  }
+}
 
 .hero .hero-button {
   padding: 14px 0;
@@ -99,10 +123,15 @@
   background-color: var(--pressed-green);
 }
 
-@media only screen and (min-width: 270px) {
+@media only screen and (min-width: 260px) {
   .hero .hero-button {
     width: 100%;
-    min-width: 250px;
+    min-width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero .hero-button {
+    max-width: 306px;
   }
 }
 
@@ -133,41 +162,23 @@
 .scroll-to-bottom:focus .scroll-to-bottom-icon {
   fill: var(--white);
 }
-.scroll-to-bottom-icon {
-  fill: var(--green);
-  transition: fill var(--animation-fast);
-}
+
 @media screen and (min-width: 768px) {
-  .hero-container {
-    padding: 260px 32px 295px 32px;
-  }
-  .hero-header {
-    max-width: 488px;
-    margin-bottom: 32px;
-
-    font-size: 60px;
-    line-height: 1.17;
-  }
-
-  .hero-button {
-    max-width: 306px;
-  }
   .scroll-to-bottom {
     right: 32px;
     bottom: 32px;
     width: 48px;
     height: 48px;
   }
+}
+
+.scroll-to-bottom-icon {
+  fill: var(--green);
+  transition: fill var(--animation-fast);
+}
+@media screen and (min-width: 768px) {
   .scroll-to-bottom-icon {
     width: 24px;
     height: 24px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .hero-container {
-    padding: 164px 32px 163px 64px;
-  }
-  .hero-header {
-    max-width: 584px;
   }
 }
