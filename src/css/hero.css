@@ -1,9 +1,69 @@
 .hero {
-  position: relative;
   padding-bottom: 80px;
   margin: 0 auto;
   max-width: 335px;
   min-height: 709px;
+}
+
+@media only screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('../img/hero/bg-mobile@2x.jpg');
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('../img/hero/bg-tablet.jpg');
+  }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+  (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('../img/hero/bg-tablet@2x.jpg');
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('../img/hero/bg-desktop.jpg');
+  }
+}
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('../img/hero/bg-desktop@2x.jpg');
+  }
+}
+.hero-container {
+  position: relative;
+  padding: 425px 20px 72px 20px;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -17,65 +77,10 @@
     ),
     url('../img/hero/bg-mobile.jpg');
 }
-
-@media only screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        357deg,
-        rgba(0, 0, 0, 0.4) 39.23%,
-        rgba(0, 0, 0, 0) 66.28%
-      ),
-      url('../img/hero/bg-mobile@2x.jpg');
+@media only screen and (max-width: 375px) {
+  .hero .hero-container {
+    padding: 425px 20px 72px;
   }
-}
-@media only screen and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(
-        357deg,
-        rgba(0, 0, 0, 0.4) 39.23%,
-        rgba(0, 0, 0, 0) 66.28%
-      ),
-      url('../img/hero/bg-tablet.jpg');
-  }
-}
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
-  (min-width: 768px) and (min-device-pixel-ratio: 2),
-  (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        357deg,
-        rgba(0, 0, 0, 0.4) 39.23%,
-        rgba(0, 0, 0, 0) 66.28%
-      ),
-      url('../img/hero/bg-tablet@2x.jpg');
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .hero {
-    background-image: linear-gradient(
-        357deg,
-        rgba(0, 0, 0, 0.4) 39.23%,
-        rgba(0, 0, 0, 0) 66.28%
-      ),
-      url('../img/hero/bg-desktop.jpg');
-  }
-}
-@media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  (min-width: 1280px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        357deg,
-        rgba(0, 0, 0, 0.4) 39.23%,
-        rgba(0, 0, 0, 0) 66.28%
-      ),
-      url('../img/hero/bg-desktop@2x.jpg');
-  }
-}
-.hero-container {
-  padding: 425px 20px 72px 20px;
 }
 
 .hero-header {
@@ -134,19 +139,20 @@
   fill: var(--green);
   transition: background-color var(--animation-fast);
 }
-.scroll-to-bottom-icon:hover,
-.scroll-to-bottom-icon:focus {
+.scroll-to-bottom:hover .scroll-to-bottom-icon,
+.scroll-to-bottom:focus .scroll-to-bottom-icon {
   fill: var(--white);
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
     padding-bottom: 100px;
-    min-height: 857px;
+    max-height: 857px;
     padding: 32px;
   }
   .hero-container {
-    padding: 260px 0;
+    padding-top: 260px;
+    padding-left: 20px;
   }
   .hero-header {
     max-width: 488px;
@@ -174,7 +180,7 @@
   .hero {
     max-width: 1152px;
     padding-bottom: 96px;
-    min-height: 629px;
+    max-height: 629px;
   }
   .hero-header {
     max-width: 584px;
