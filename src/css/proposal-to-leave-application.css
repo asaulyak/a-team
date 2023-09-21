@@ -218,6 +218,14 @@
   }
 }
 
+@media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .proposal-decor-img {
+    background-image: url('../img/proposal/books-stack@2x.png');
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .proposal-decor-img {
     top: -25px;
