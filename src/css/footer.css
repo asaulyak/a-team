@@ -40,12 +40,12 @@
 }
 
 .footer-bottom {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--medium-white);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--ultra-soft-white);
   font-size: 14px;
   line-height: 1.3;
   letter-spacing: -0.02px;
@@ -132,7 +132,7 @@
   background-color: var(--green);
   opacity: 0;
   transition:
-    opacity 250ms ease,
+    opacity var(--animation-fast),
     width 250ms ease;
 }
 
@@ -148,7 +148,7 @@
 
 .footer-social-item {
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--ultra-soft-white);
   width: 42px;
   height: 42px;
   display: flex;
@@ -174,7 +174,7 @@
 
 .footer-social-item:hover,
 .footer-social-item:focus {
-  border: 1px solid rgba(77, 194, 116, 0.1);
+  border: 1px solid var(--ultra-soft-green);
 }
 
 .footer-icon {
