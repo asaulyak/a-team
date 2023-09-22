@@ -108,6 +108,7 @@
   }
 }
 
+/* Swiper */
 .swiper {
   width: 100%;
   cursor: pointer;
@@ -138,4 +139,45 @@
   outline-color: var(--green);
   opacity: 1;
   transform: scale(1.05);
+}
+
+/* If swiper not work or problem with js*/
+@media only screen and (max-width: 767.98px) {
+  .reviews-item:not(:first-child) {
+    display: none;
+  }
+  .swiper-initialized .reviews-item:not(:first-child) {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .reviews-list {
+    display: flex;
+    min-width: 0;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .reviews-item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+  .reviews-item:nth-child(n + 3) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .reviews-item {
+    flex-basis: calc((100% - (2 * 32px)) / 3);
+  }
+  .reviews-item:nth-child(3) {
+    display: block;
+  }
+}
+
+.swiper-initialized .reviews-list {
+  flex-wrap: nowrap;
+  gap: 0px;
+}
+.swiper-initialized .reviews-item:nth-child(n + 3) {
+  display: block;
 }
