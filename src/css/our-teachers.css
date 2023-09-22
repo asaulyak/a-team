@@ -2,6 +2,7 @@
 .our-teachers-description {
   margin-bottom: 40px;
 }
+
 @media only screen and (min-width: 768px) {
   .our-teachers-description {
     margin: 0 auto 64px;
@@ -33,16 +34,19 @@
     margin-bottom: 40px;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .our-teachers-item {
     flex-basis: calc((100% - 32px) / 2);
   }
 }
+
 @media only screen and (min-width: 1280px) {
   .our-teachers-item {
     flex-basis: calc((100% - (32px * 3)) / 4);
   }
 }
+
 /* SECTION LIST ITEM THUMB*/
 .our-teachers-item-thumb {
   display: flex;
@@ -60,15 +64,16 @@
   border: none;
   overflow: hidden;
 }
+
 /* SECTION LIST ITEM TITLE*/
 .our-teachers-item-title {
   margin-bottom: 8px;
 
   font-size: 20px;
-  font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
+
 /* SECTION LIST ITEM DESCRIPTION*/
 .our-teachers-item-description {
   color: var(--soft-black);

@@ -20,6 +20,7 @@
   justify-content: space-between;
   margin: 0 auto;
 }
+
 @media only screen and (max-width: 374px) {
   .container.header-container {
     width: 280px;
@@ -383,6 +384,13 @@ Mobile Menu
   line-height: 1.28em;
   color: var(--white);
   transition: letter-spacing var(--animation-fast);
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .menu-nav-link {
+    font-size: 16px;
+  }
 }
 
 .menu-nav-link:hover {
