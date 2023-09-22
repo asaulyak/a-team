@@ -12,7 +12,7 @@
   max-width: 336px;
 }
 
-.our-lessons-item:nth-child(2) {
+.our-lessons-item:nth-child(2n) {
   border-radius: 16px;
   background-color: var(--green);
   margin-bottom: 40px;
@@ -67,13 +67,14 @@
   transition: background-color var(--animation-fast);
 }
 
-.our-lessons-button:hover {
-  background-color: #38ae5f;
+.our-lessons-button:hover,
+.our-lessons-button:focus {
+  background-color: var(--dark-green);
 }
 
 .our-lessons-secondary-button {
   padding: 14px 76px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid var(--soft-gray);
   min-width: 256px;
   border-radius: 12px;
   font-size: 14px;
@@ -84,6 +85,7 @@
   transition: background-color var(--animation-fast);
 }
 
+.our-lessons-secondary-button:focus,
 .our-lessons-secondary-button:hover {
   color: var(--green);
   background-color: var(--white);
@@ -115,7 +117,7 @@
     padding: 32px 16px;
   }
 
-  .our-lessons-item:nth-child(2) {
+  .our-lessons-item:nth-child(2n) {
     padding: 32px 16px;
     margin-bottom: 0;
   }
@@ -140,7 +142,7 @@
     max-width: 320px;
   }
 
-  .our-lessons-item:nth-child(2) {
+  .our-lessons-item:nth-child(2n) {
     padding: 32px;
     margin-bottom: 0;
     max-width: 320px;

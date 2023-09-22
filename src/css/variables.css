@@ -2,6 +2,7 @@
   --black: #121417;
   --soft-black: rgba(18, 20, 23, 0.5);
   --green: #4dc274;
+  --dark-green: #38ae5f;
   --gree-linear: linear-gradient(85deg, #4dc274 2.25%, #bee8cc 131.25%);
   --light-green: #d4fde1;
   --soft-green: #bee8cc;
@@ -9,5 +10,6 @@
   --white: #fff;
   --soft-white: rgba(255, 255, 255, 0.5);
   --grey-bg-image: rgb(128, 127, 127);
+  --soft-gray: rgba(255, 255, 255, 0.4);
   --animation-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
