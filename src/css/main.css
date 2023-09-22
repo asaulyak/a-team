@@ -116,9 +116,15 @@ body {
 
   width: 100%;
 
-  border-bottom: 20px solid var(--soft-green);
+  border-bottom: 12px solid var(--soft-green);
   border-radius: 8px;
   z-index: -1;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-title-accent::after {
+    border-bottom: 20px solid var(--soft-green);
+  }
 }
 
 .section-description {
