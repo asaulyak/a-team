@@ -1,17 +1,5 @@
-.leave-application {
-  padding: 40px 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .leave-application {
-    padding: 50px 0;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .leave-application {
-    padding: 75px 0;
-  }
+.leave-application.section {
+  text-align: left;
 }
 
 .leave-application-heading {
@@ -186,6 +174,10 @@
   border-color: var(--green);
 }
 
+.leave-application-form-input:not(:placeholder-shown):invalid {
+  border-color: var(--red);
+}
+
 .leave-application-form-comment {
   display: block;
   width: 100%;
@@ -198,6 +190,10 @@
   outline: none;
 
   resize: none;
+}
+
+.leave-application-form-comment:not(:placeholder-shown):invalid {
+  border-color: var(--red);
 }
 
 .leave-application-form-field-teachers {
