@@ -4,7 +4,7 @@ export const reveal = () => {
   sections.forEach(section => {
     const windowHeight = window.innerHeight;
     const elementTop = section.getBoundingClientRect().top;
-    const elementVisible = windowHeight * 0.35;
+    const elementVisible = windowHeight * 0.2;
 
     if (elementTop < windowHeight - elementVisible) {
       section.classList.add('active');

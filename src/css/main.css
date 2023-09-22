@@ -23,6 +23,9 @@
 
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
 
 .visually-hidden {
   position: absolute;
