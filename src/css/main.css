@@ -146,7 +146,7 @@
 }
 
 .button:hover {
-  background-color: var(--gray);
+  background-color: var(--pressed-green);
 }
 
 @media only screen and (min-width: 768px) {
