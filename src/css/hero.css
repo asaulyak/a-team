@@ -73,6 +73,8 @@
 
 @media only screen and (max-width: 375px) {
   .hero .hero-container {
+    margin: 0 auto;
+    max-width: 100%;
     padding: 425px 20px 72px;
   }
 }
@@ -83,6 +85,7 @@
 }
 @media only screen and (min-width: 1280px) {
   .hero-container {
+    min-width: 1152px;
     padding: 164px 32px 163px 64px;
   }
 }
