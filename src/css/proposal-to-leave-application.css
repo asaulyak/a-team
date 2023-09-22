@@ -272,6 +272,7 @@
   align-items: center;
 
   min-width: 200px;
+  max-width: 306px;
   padding: 14px 30px;
 }
 @media only screen and (min-width: 375px) {
