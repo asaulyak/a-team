@@ -85,6 +85,16 @@
   transition: background-color var(--animation-fast);
 }
 
+@media only screen and (max-width: 374px) {
+
+  .our-lessons-button,
+  .our-lessons-secondary-button {
+    min-width: auto;
+    width: 100%;
+    padding: 14px 10px;
+  }
+}
+
 .our-lessons-secondary-button:hover,
 .our-lessons-secondary-button:focus {
   color: var(--green);
