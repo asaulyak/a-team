@@ -193,3 +193,38 @@
 .header-accent-color {
   color: var(--soft-green);
 }
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-left {
+  animation: fade-left var(--animation-reveal);
+}
+.active.fade-right {
+  animation: fade-right var(--animation-reveal);
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
