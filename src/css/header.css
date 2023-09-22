@@ -14,12 +14,6 @@
   }
 }
 
-.container {
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 375px) {
   .container {
     width: 375px;
@@ -29,14 +23,12 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding: 0 32px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
-    padding: 0 64px;
   }
 }
 
@@ -90,7 +82,6 @@ img {
   align-items: center;
   justify-content: space-between;
   min-width: 320px;
-  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -103,14 +94,12 @@ img {
 @media screen and (min-width: 768px) {
   .header-container {
     width: 768px;
-    padding: 0 32px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .header-container {
     width: 1280px;
-    padding: 0 128px;
   }
 }
 
