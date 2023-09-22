@@ -6,10 +6,13 @@
   border-radius: 16px;
   border: 1px solid var(--green);
   background-color: var(--white);
-  margin-bottom: 40px;
   padding: 40px 20px;
   color: var(--soft-black);
   max-width: 336px;
+}
+
+.our-lessons-item:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .our-lessons-item:nth-child(2n) {
@@ -55,6 +58,7 @@
 }
 
 .our-lessons-button {
+  display: block;
   padding: 14px 76px;
   border: 1px solid var(--soft-gray);
   min-width: 256px;
@@ -73,6 +77,7 @@
 }
 
 .our-lessons-secondary-button {
+  display: block;
   padding: 14px 76px;
   border: 1px solid var(--soft-gray);
   min-width: 256px;
@@ -117,6 +122,10 @@
     padding: 32px 16px;
   }
 
+  .our-lessons-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
   .our-lessons-item:nth-child(2n) {
     padding: 32px 16px;
     margin-bottom: 0;
@@ -144,7 +153,6 @@
 
   .our-lessons-item:nth-child(2n) {
     padding: 32px;
-    margin-bottom: 0;
     max-width: 320px;
   }
 
