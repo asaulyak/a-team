@@ -1,3 +1,17 @@
+.hero.section {
+  padding-top: 8px;
+}
+@media screen and (min-width: 768px) {
+  .hero.section {
+    padding-top: 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero.section {
+    padding-top: 16px;
+  }
+}
+
 @media only screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
