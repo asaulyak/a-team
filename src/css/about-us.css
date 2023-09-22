@@ -1,28 +1,16 @@
-.about-section {
-}
-
 .about-title-container {
-  max-width: 335px;
   margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .about-title-container {
-    max-width: 704px;
-
     margin-bottom: 64px;
-  }
-}
-
-@media only screen and (min-width: minwidthpx) {
-  .about-title-container {
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .about-title-container {
     max-width: 832px;
-    /* margin-bottom: 64px; */
   }
 }
 
@@ -67,6 +55,7 @@
   font-weight: 400;
   line-height: 1.71;
   max-width: 334px;
+  margin: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -121,7 +110,7 @@
   height: 160px;
   flex-shrink: 0;
   border-radius: 16px;
-  background: #f3f5f6;
+  background-color: var(--gray);
   padding: 32px;
 }
 
