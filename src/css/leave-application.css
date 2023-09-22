@@ -1,17 +1,5 @@
-.leave-application {
-  padding: 40px 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .leave-application {
-    padding: 50px 0;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .leave-application {
-    padding: 75px 0;
-  }
+.leave-application.section {
+  text-align: left;
 }
 
 .leave-application-heading {
