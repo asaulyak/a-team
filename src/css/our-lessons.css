@@ -69,7 +69,7 @@
 
 .our-lessons-button:hover,
 .our-lessons-button:focus {
-  background-color: var(--dark-green);
+  background-color: var(--pressed-green);
 }
 
 .our-lessons-secondary-button {
