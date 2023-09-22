@@ -85,8 +85,8 @@
   transition: background-color var(--animation-fast);
 }
 
-.our-lessons-secondary-button:focus,
-.our-lessons-secondary-button:hover {
+.our-lessons-secondary-button:hover,
+.our-lessons-secondary-button:focus {
   color: var(--green);
   background-color: var(--white);
 }
