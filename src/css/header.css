@@ -21,6 +21,7 @@
   margin: 0 auto;
   min-width: 320px;
 }
+
 @media only screen and (max-width: 374px) {
   .container.header-container {
     width: 280px;
@@ -276,18 +277,20 @@ Mobile Menu
 
   background-color: var(--soft-black);
 
-  transition: opacity var(--animation-fast);
+  transition:
+    opacity var(--animation-fast),
+    visibility var(--animation-fast);
 
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition-delay: 200ms;
 }
 
 .mobile-backdrop.is-open {
   opacity: 1;
   pointer-events: initial;
   visibility: visible;
-  transition-delay: 0ms;
 }
 
 .menu-container {
@@ -299,13 +302,14 @@ Mobile Menu
   right: 0;
 
   width: 240px;
-  height: 100vh;
+  height: 100%;
   padding: 20px;
 
   background-color: var(--green);
 
   transform: translateX(100%);
   transition: transform var(--animation-fast);
+  transition-delay: 200ms;
 }
 
 @media screen and (min-width: 768px) {
@@ -317,8 +321,7 @@ Mobile Menu
 }
 
 .mobile-backdrop.is-open .menu-container {
-  transform: translate(0);
-  transition-delay: 200ms;
+  transform: translateX(0);
 }
 
 .menu-close-button {
@@ -351,6 +354,7 @@ Mobile Menu
 
 .menu-close-icon {
   stroke: var(--white);
+  pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -378,6 +382,13 @@ Mobile Menu
   line-height: 1.28em;
   color: var(--white);
   transition: letter-spacing var(--animation-fast);
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .menu-nav-link {
+    font-size: 16px;
+  }
 }
 
 .menu-nav-link:hover {
@@ -419,6 +430,10 @@ Mobile Menu
 .menu-socials-link:hover,
 .menu-socials-link:focus {
   background-color: var(--white);
+}
+
+.menu-socials-icon {
+  pointer-events: none;
 }
 
 .menu-socials-link:hover .menu-socials-icon,

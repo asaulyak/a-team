@@ -53,7 +53,6 @@
   color: var(--soft-black);
   text-align: center;
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.71;
 
   margin: 0 auto;
@@ -102,17 +101,18 @@
   margin-bottom: 20px;
   border-radius: 30px;
 }
+
 .leave-application-image-card-heading {
   margin-bottom: 8px;
 
   color: var(--white);
   text-align: center;
   font-size: 40px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
+
 .leave-application-image-card-text {
   width: 452px;
 
@@ -121,6 +121,7 @@
   font-size: 16px;
   line-height: 1.5;
 }
+
 .leave-application-form {
   display: flex;
   flex-direction: column;
@@ -155,8 +156,6 @@
 
   color: var(--black);
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.28;
 
   transition: border var(--animation-fast);
@@ -250,7 +249,6 @@
 .leave-application-form-radio-element {
   color: var(--black);
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.71;
   letter-spacing: -0.02em;
 }
@@ -323,19 +321,13 @@
   }
 }
 
-input[type='radio']:checked
-  + .leave-application-form-radio-label
-  .leave-application-form-radio {
+input[type='radio']:checked+.leave-application-form-radio-label .leave-application-form-radio {
   fill: var(--green);
   border-color: var(--green);
 }
 
-input[type='radio']:checked
-  + .leave-application-form-radio-label:hover
-  .leave-application-form-radio,
-input[type='radio']:checked
-  + .leave-application-form-radio-label:focus
-  .leave-application-form-radio {
+input[type='radio']:checked+.leave-application-form-radio-label:hover .leave-application-form-radio,
+input[type='radio']:checked+.leave-application-form-radio-label:focus .leave-application-form-radio {
   border-color: var(--pressed-green);
 }
 
@@ -347,7 +339,6 @@ input[type='radio']:checked
   color: var(--soft-black);
   font-size: 12px;
   line-height: 1.33;
-  font-weight: 400;
 }
 
 @media only screen and (min-width: 768px) {

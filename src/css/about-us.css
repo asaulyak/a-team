@@ -32,11 +32,27 @@
   }
 }
 
+.section-title-accent {
+  color: var(--black);
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-title-accent {
+    font-size: 40px;
+    line-height: 1.12;
+  }
+}
+
 .about-section-text {
   color: var(--soft-black);
   text-align: center;
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.71;
   max-width: 334px;
   margin: auto;
@@ -74,7 +90,7 @@
 }
 
 .about-item::before {
-  content: '0' counter(item-counter);
+  content: '0'counter(item-counter);
   counter-increment: item-counter;
   color: var(--green);
   font-size: 28px;
@@ -83,6 +99,7 @@
   letter-spacing: -0.02em;
   margin-bottom: 16px;
   display: block;
+  text-align: start;
 }
 
 .about-item {
@@ -109,6 +126,7 @@
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
+  text-align: start;
 }
 
 .about-emoji {
