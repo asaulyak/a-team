@@ -315,6 +315,11 @@
     border var(--animation-fast);
 }
 
+.leave-application-form-radio-label:hover .leave-application-form-radio,
+.leave-application-form-radio-label:focus .leave-application-form-radio {
+  border-color: var(--black);
+}
+
 @media only screen and (min-width: 768px) {
   .leave-application-form-radio {
     width: 20px;
@@ -327,6 +332,15 @@ input[type='radio']:checked
   .leave-application-form-radio {
   fill: var(--green);
   border-color: var(--green);
+}
+
+input[type='radio']:checked
+  + .leave-application-form-radio-label:hover
+  .leave-application-form-radio,
+input[type='radio']:checked
++ .leave-application-form-radio-label:focus
+.leave-application-form-radio {
+  border-color: var(--pressed-green);
 }
 
 .leave-application-form-submit-button {
