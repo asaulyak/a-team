@@ -120,7 +120,7 @@ img {
   font-weight: 700;
   line-height: normal;
   color: var(--black);
-  transition: transform var(--transition-dur-and-func);
+  transition: transform var(--animation-fast);
 }
 
 @media screen and (min-width: 1280px) {
@@ -180,7 +180,7 @@ img {
   bottom: -4px;
   background-color: var(--green);
   opacity: 0;
-  transition: opacity var(--transition-dur-and-func);
+  transition: opacity var(--animation-fast);
 }
 
 .header-nav-link-one:hover:after {
@@ -204,7 +204,7 @@ img {
   bottom: -4px;
   background-color: var(--green);
   opacity: 0;
-  transition: opacity var(--transition-dur-and-func);
+  transition: opacity var(--animation-fast);
 }
 
 .header-nav-link-two:hover:after {
@@ -228,7 +228,7 @@ img {
   bottom: -4px;
   background-color: var(--green);
   opacity: 0;
-  transition: opacity var(--transition-dur-and-func);
+  transition: opacity var(--animation-fast);
 }
 
 .header-nav-link-three:hover:after {
@@ -252,7 +252,7 @@ img {
   bottom: -4px;
   background-color: var(--green);
   opacity: 0;
-  transition: opacity var(--transition-dur-and-func);
+  transition: opacity var(--animation-fast);
 }
 
 .header-nav-link-four:hover:after {
@@ -276,7 +276,7 @@ img {
   bottom: -4px;
   background-color: var(--green);
   opacity: 0;
-  transition: opacity var(--transition-dur-and-func);
+  transition: opacity var(--animation-fast);
 }
 
 .header-nav-link-five:hover:after {
@@ -314,13 +314,13 @@ img {
 .header-socials-link:hover,
 .header-socials-link:focus {
   border: 1px solid rgba(77, 194, 116, 0.1);
-  transition: border var(--transition-dur-and-func);
+  transition: border var(--animation-fast);
 }
 
 .header-socials-link:hover .header-socials-icon,
 .header-socials-link:focus .header-socials-icon {
   fill: #4dc274;
-  transition: fill var(--transition-dur-and-func);
+  transition: fill var(--animation-fast);
 }
 
 .menu-open-button {
@@ -329,7 +329,7 @@ img {
   justify-content: center;
   background-color: transparent;
   border: none;
-  transition: transform var(--transition-dur-and-func);
+  transition: transform var(--animation-fast);
 }
 
 .menu-open-button:hover {
@@ -392,7 +392,7 @@ Mobile Menu
   background-color: var(--green);
 
   transform: translateX(100%);
-  transition: transform var(--transition-dur-and-func);
+  transition: transform var(--animation-fast);
 }
 
 @media screen and (min-width: 768px) {
@@ -420,7 +420,7 @@ Mobile Menu
 
   cursor: pointer;
 
-  transition: transform var(--transition-dur-and-func);
+  transition: transform var(--animation-fast);
 }
 
 @media screen and (min-width: 768px) {
@@ -464,7 +464,7 @@ Mobile Menu
   font-weight: 600;
   line-height: 1.28em;
   color: var(--white);
-  transition: letter-spacing var(--transition-dur-and-func);
+  transition: letter-spacing var(--animation-fast);
 }
 
 .menu-nav-link:hover {
@@ -511,5 +511,5 @@ Mobile Menu
 .menu-socials-link:hover .menu-socials-icon,
 .menu-socials-link:focus .menu-socials-icon {
   fill: var(--green);
-  transition: fill var(--transition-dur-and-func);
+  transition: fill var(--animation-fast);
 }
