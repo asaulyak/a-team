@@ -73,8 +73,9 @@
 
 @media only screen and (max-width: 375px) {
   .hero .hero-container {
-    margin: 0 auto;
-    max-width: 100%;
+    min-width: 320px;
+    max-width: 355px;
+    width: 100%;
     padding: 425px 20px 72px;
   }
 }
