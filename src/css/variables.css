@@ -17,4 +17,5 @@
   --soft-gray: rgba(255, 255, 255, 0.4);
   --red: #ff3333;
   --animation-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-reveal: 500ms cubic-bezier(0.22, -0.03, 0.36, 1.4);
 }
