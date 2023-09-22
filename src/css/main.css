@@ -46,7 +46,6 @@
 @media only screen and (max-width: 374px) {
   .container {
     max-width: 100%;
-    padding: 0 20px;
   }
 }
 
@@ -65,6 +64,13 @@
 .section {
   text-align: center;
   padding: 40px 0;
+}
+
+@media only screen and (max-width: 374px) {
+  .section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -130,7 +136,8 @@
 
 .button {
   padding: 14px 87px;
-  min-width: 280px;
+  min-width: 240px;
+  width: 100%;
 
   border: 0;
   border-radius: 12px;

@@ -1,6 +1,14 @@
 .hero.section {
   padding-top: 8px;
 }
+
+@media only screen and (max-width: 374px) {
+  .hero.section {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero.section {
     padding-top: 32px;
@@ -8,7 +16,7 @@
 }
 @media only screen and (min-width: 1280px) {
   .hero.section {
-    padding-top: 16px;
+    padding: 16px 0 21px;
   }
 }
 
@@ -85,14 +93,6 @@
     url('../img/hero/bg-mobile.jpg');
 }
 
-@media only screen and (max-width: 375px) {
-  .hero .hero-container {
-    min-width: 320px;
-    max-width: 355px;
-    width: 100%;
-    padding: 425px 20px 72px;
-  }
-}
 @media screen and (min-width: 768px) {
   .hero-container {
     padding: 260px 32px 295px 32px;
@@ -136,17 +136,7 @@
   justify-content: center;
   align-items: center;
 }
-.hero .hero-button:hover,
-.hero .hero-button:focus {
-  background-color: var(--pressed-green);
-}
 
-@media only screen and (min-width: 260px) {
-  .hero .hero-button {
-    width: 100%;
-    min-width: 210px;
-  }
-}
 @media screen and (min-width: 768px) {
   .hero .hero-button {
     padding: 16px;
