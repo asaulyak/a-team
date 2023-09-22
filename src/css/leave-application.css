@@ -338,8 +338,8 @@ input[type='radio']:checked
   + .leave-application-form-radio-label:hover
   .leave-application-form-radio,
 input[type='radio']:checked
-+ .leave-application-form-radio-label:focus
-.leave-application-form-radio {
+  + .leave-application-form-radio-label:focus
+  .leave-application-form-radio {
   border-color: var(--pressed-green);
 }
 
@@ -363,4 +363,9 @@ input[type='radio']:checked
 
 .leave-application-form-link {
   text-decoration: underline;
+}
+
+.leave-application-form-link:hover,
+.leave-application-form-link:focus {
+  color: var(--black);
 }
