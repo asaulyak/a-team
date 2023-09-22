@@ -114,9 +114,7 @@
   line-height: 1.05;
   color: var(--white);
 }
-.hero-header-english {
-  color: var(--soft-green);
-}
+
 @media screen and (min-width: 768px) {
   .hero-header {
     max-width: 488px;
@@ -133,7 +131,7 @@
 }
 
 .hero .hero-button {
-  padding: 14px 0;
+  padding: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,6 +139,7 @@
 
 @media screen and (min-width: 768px) {
   .hero .hero-button {
+    padding: 16px;
     max-width: 306px;
   }
 }
@@ -163,16 +162,6 @@
   background-color: var(--white);
   transition: background-color var(--animation-fast);
 }
-.scroll-to-bottom:hover,
-.scroll-to-bottom:focus {
-  background-color: var(--green);
-}
-
-.scroll-to-bottom:hover .scroll-to-bottom-icon,
-.scroll-to-bottom:focus .scroll-to-bottom-icon {
-  fill: var(--white);
-}
-
 @media screen and (min-width: 768px) {
   .scroll-to-bottom {
     right: 32px;
@@ -180,6 +169,11 @@
     width: 48px;
     height: 48px;
   }
+}
+
+.scroll-to-bottom:hover,
+.scroll-to-bottom:focus {
+  background-color: var(--green);
 }
 
 .scroll-to-bottom-icon {
@@ -191,4 +185,9 @@
     width: 24px;
     height: 24px;
   }
+}
+
+.scroll-to-bottom:hover .scroll-to-bottom-icon,
+.scroll-to-bottom:focus .scroll-to-bottom-icon {
+  fill: var(--white);
 }

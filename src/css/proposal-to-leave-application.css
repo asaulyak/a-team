@@ -54,10 +54,6 @@
   }
 }
 
-.proposal-accent {
-  color: var(--soft-green);
-}
-
 /* CONTENT WRAP */
 .proposal-content-wrap {
   position: relative;

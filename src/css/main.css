@@ -189,3 +189,7 @@
   border-radius: 8px;
   z-index: -1;
 }
+
+.header-accent-color {
+  color: var(--soft-green);
+}
