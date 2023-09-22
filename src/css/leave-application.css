@@ -186,6 +186,10 @@
   border-color: var(--green);
 }
 
+.leave-application-form-input:not(:placeholder-shown):invalid {
+  border-color: var(--red);
+}
+
 .leave-application-form-comment {
   display: block;
   width: 100%;
@@ -198,6 +202,10 @@
   outline: none;
 
   resize: none;
+}
+
+.leave-application-form-comment:not(:placeholder-shown):invalid {
+  border-color: var(--red);
 }
 
 .leave-application-form-field-teachers {
