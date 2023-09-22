@@ -1,16 +1,16 @@
 .header-section {
-  padding-bottom: 80px;
+  margin-bottom: 8px;
 }
 
 @media screen and (min-width: 768px) {
   .header-section {
-    padding-bottom: 100px;
+    margin-bottom: 32px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .header-section {
-    padding-bottom: 150px;
+    margin-bottom: 16px;
   }
 }
 
