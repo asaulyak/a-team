@@ -12,4 +12,5 @@ export const reveal = () => {
   });
 };
 
+window.addEventListener('load', reveal);
 window.addEventListener('scroll', reveal);
