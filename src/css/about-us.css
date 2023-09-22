@@ -32,6 +32,23 @@
   }
 }
 
+.section-title-accent {
+  color: var(--black);
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-title-accent {
+    font-size: 40px;
+    line-height: 1.12;
+  }
+}
+
 .about-section-text {
   color: var(--soft-black);
   text-align: center;
