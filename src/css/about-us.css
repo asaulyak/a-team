@@ -32,24 +32,8 @@
   }
 }
 
-.accent {
-  position: relative;
-}
-
-.accent::after {
-  position: absolute;
-  z-index: -1;
-  left: -2px;
-  bottom: 0;
-  content: '';
-  width: calc(100% + 4px);
-  height: 20px;
-  border-radius: 8px;
-  background: var(--soft-green);
-}
-
 .about-section-text {
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--soft-black);
   text-align: center;
   font-size: 14px;
   font-weight: 400;
@@ -64,10 +48,6 @@
     line-height: 1.67;
     max-width: 658px;
   }
-}
-
-.about-list-container {
-  position: relative;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -129,7 +109,6 @@
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  /* padding-left: 32px; */
 }
 
 .about-emoji {
