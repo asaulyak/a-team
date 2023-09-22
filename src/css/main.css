@@ -146,11 +146,7 @@
 }
 
 .button:hover {
-<<<<<<< HEAD
-  background-color: var(--pressed-green);
-=======
   background-color: var(--gray);
->>>>>>> 471daa3168117c941178f9db2fd194d0269d59c1
 }
 
 @media only screen and (min-width: 768px) {
