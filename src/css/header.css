@@ -278,18 +278,20 @@ Mobile Menu
 
   background-color: var(--soft-black);
 
-  transition: opacity var(--animation-fast);
+  transition:
+    opacity var(--animation-fast),
+    visibility var(--animation-fast);
 
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition-delay: 200ms;
 }
 
 .mobile-backdrop.is-open {
   opacity: 1;
   pointer-events: initial;
   visibility: visible;
-  transition-delay: 0ms;
 }
 
 .menu-container {
@@ -308,6 +310,7 @@ Mobile Menu
 
   transform: translateX(100%);
   transition: transform var(--animation-fast);
+  transition-delay: 200ms;
 }
 
 @media screen and (min-width: 768px) {
@@ -319,8 +322,7 @@ Mobile Menu
 }
 
 .mobile-backdrop.is-open .menu-container {
-  transform: translate(0);
-  transition-delay: 200ms;
+  transform: translateX(0);
 }
 
 .menu-close-button {
@@ -353,6 +355,7 @@ Mobile Menu
 
 .menu-close-icon {
   stroke: var(--white);
+  pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -421,6 +424,10 @@ Mobile Menu
 .menu-socials-link:hover,
 .menu-socials-link:focus {
   background-color: var(--white);
+}
+
+.menu-socials-icon {
+  pointer-events: none;
 }
 
 .menu-socials-link:hover .menu-socials-icon,
