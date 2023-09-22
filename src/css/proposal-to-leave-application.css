@@ -212,13 +212,33 @@
   width: 20px;
   height: 20px;
 
-  background-image: url('../img/proposal/icon-check.svg');
-  background-size: contain;
+  background-color: var(--green);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 @media only screen and (min-width: 768px) {
   .proposal-list-item-icon {
     width: 28px;
     height: 28px;
+  }
+}
+
+.proposal-list-item-icon-check {
+  width: 12px;
+  height: 12px;
+
+  fill: none;
+  stroke: var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-list-item-icon-check {
+    width: 20px;
+    height: 20px;
   }
 }
 
