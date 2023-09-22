@@ -220,18 +220,21 @@
   justify-content: center;
   border-radius: 10px;
   border: 1px solid var(--ultra-soft-black);
+  transition: border var(--animation-fast);
 }
 
 .header-socials-link:hover,
 .header-socials-link:focus {
-  border: 1px solid var(--ultra-soft-green);
-  transition: border var(--animation-fast);
+  border-color: var(--ultra-soft-green);
+}
+
+.header-socials-link .header-socials-icon {
+  transition: fill var(--animation-fast);
 }
 
 .header-socials-link:hover .header-socials-icon,
 .header-socials-link:focus .header-socials-icon {
   fill: var(--green);
-  transition: fill var(--animation-fast);
 }
 
 .menu-open-button {
@@ -286,7 +289,7 @@ Mobile Menu
   opacity: 1;
   pointer-events: initial;
   visibility: visible;
-  transition-delay: 0;
+  transition-delay: 0ms;
 }
 
 .menu-container {
@@ -408,20 +411,19 @@ Mobile Menu
   fill: var(--white);
   border-radius: 10px;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
+  border: 1px solid var(--ultra-soft-white);
 
-.menu-socials-link:hover,
-.menu-socials-link:focus {
-  border-radius: 10px;
-  background-color: var(--white);
   transition:
     border-radius var(--animation-fast),
     background-color var(--animation-fast);
 }
 
+.menu-socials-link:hover,
+.menu-socials-link:focus {
+  background-color: var(--white);
+}
+
 .menu-socials-link:hover .menu-socials-icon,
 .menu-socials-link:focus .menu-socials-icon {
   fill: var(--green);
-  transition: fill var(--animation-fast);
 }
