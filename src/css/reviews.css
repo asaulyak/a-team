@@ -26,15 +26,6 @@
   }
 }
 
-/* SECTION LIST */
-@media only screen and (min-width: 768px) {
-  .reviews-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-  }
-}
-
 /* SECTION LIST ITEM*/
 .reviews-item {
   padding: 20px;
@@ -44,31 +35,15 @@
   border-radius: 16px;
   background: var(--gray);
 }
-@media only screen and (max-width: 767.98px) {
-  .reviews-item:not(:first-child) {
-    display: none;
-  }
-}
+
 @media only screen and (min-width: 768px) {
   .reviews-item {
     padding: 32px 16px;
 
     min-height: 326px;
-
-    flex-basis: calc((100% - 32px) / 2);
   }
 }
 
-@media only screen and (max-width: 1279.98px) {
-  .reviews-item:last-child {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .reviews-item {
-    flex-basis: calc((100% - 2 * 32px) / 3);
-  }
-}
 .reviews-item-wrapper {
   display: flex;
   align-items: center;
@@ -131,4 +106,78 @@
     font-size: 16px;
     line-height: 1.5;
   }
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  cursor: pointer;
+}
+
+.swiper-wrapper {
+  padding-bottom: 60px;
+}
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-inactive-color: var(--grey-bg-image);
+  --swiper-pagination-color: var(--green);
+  --swiper-pagination-bullet-width: 20px;
+  --swiper-pagination-bullet-height: 20px;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+
+  outline: 2px solid transparent;
+  outline-offset: 4px;
+
+  transform: scale(1);
+  transition:
+    outline-color var(--animation-fast),
+    opacity var(--animation-fast);
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet:focus {
+  --swiper-pagination-bullet-inactive-color: var(--green);
+  outline-color: var(--green);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* If swiper not work or problem with js*/
+@media only screen and (max-width: 767.98px) {
+  .reviews-item:not(:first-child) {
+    display: none;
+  }
+  .swiper-initialized .reviews-item:not(:first-child) {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .reviews-list {
+    display: flex;
+    min-width: 0;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .reviews-item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+  .reviews-item:nth-child(n + 3) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .reviews-item {
+    flex-basis: calc((100% - (2 * 32px)) / 3);
+  }
+  .reviews-item:nth-child(3) {
+    display: block;
+  }
+}
+
+.swiper-initialized .reviews-list {
+  flex-wrap: nowrap;
+  gap: 0px;
+}
+.swiper-initialized .reviews-item:nth-child(n + 3) {
+  display: block;
 }

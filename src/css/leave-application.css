@@ -279,6 +279,24 @@
   }
 }
 
+.leave-application-form-radio-wrapper {
+  width: 20px;
+  height: 20px;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .leave-application-form-radio-wrapper {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .leave-application-form-radio {
   display: inline-flex;
   justify-content: center;
@@ -292,11 +310,14 @@
 
   fill: transparent;
 
-  cursor: pointer;
-
   transition:
     fill var(--animation-fast),
     border var(--animation-fast);
+}
+
+.leave-application-form-radio-label:hover .leave-application-form-radio,
+.leave-application-form-radio-label:focus .leave-application-form-radio {
+  border-color: var(--black);
 }
 
 @media only screen and (min-width: 768px) {
@@ -311,6 +332,15 @@ input[type='radio']:checked
   .leave-application-form-radio {
   fill: var(--green);
   border-color: var(--green);
+}
+
+input[type='radio']:checked
+  + .leave-application-form-radio-label:hover
+  .leave-application-form-radio,
+input[type='radio']:checked
+  + .leave-application-form-radio-label:focus
+  .leave-application-form-radio {
+  border-color: var(--pressed-green);
 }
 
 .leave-application-form-submit-button {
@@ -333,4 +363,10 @@ input[type='radio']:checked
 
 .leave-application-form-link {
   text-decoration: underline;
+  transition: color var(--animation-fast);
+}
+
+.leave-application-form-link:hover,
+.leave-application-form-link:focus {
+  color: var(--black);
 }
