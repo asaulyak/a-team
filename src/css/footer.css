@@ -71,6 +71,15 @@
   }
 }
 
+.footer-bottom-item-link{
+  transition: color var(--animation-fast);
+}
+
+.footer-bottom-item-link:hover,
+.footer-bottom-item-link:focus {
+  color: var(--soft-white);
+}
+
 .footer-wrap {
   margin-bottom: 40px;
 }
@@ -112,6 +121,13 @@
 
 .footer-item {
   font-weight: 600;
+
+  transition: color var(--animation-fast);
+}
+
+.footer-item:hover,
+.footer-item:focus {
+  color: var(--green);
 }
 
 .footer-nav {
