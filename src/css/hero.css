@@ -73,7 +73,7 @@
 }
 .hero-container {
   position: relative;
-  padding: 425px 20px 72px 20px;
+  padding: 425px 20px 72px;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -126,7 +126,9 @@
 }
 
 .hero .hero-button {
-  padding: 14px;
+  min-width: auto;
+  width: 100%;
+  padding: 14px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
