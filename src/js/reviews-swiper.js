@@ -1,15 +1,15 @@
 import Swiper from 'swiper/bundle';
-import { Navigation, Pagination } from 'swiper/modules';
+import {  Pagination } from 'swiper/modules';
 import 'swiper/css/bundle';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // init Swiper:
 const swiperContainer = document.querySelector('.swiper');
+const swiperPagination = document.querySelector('.swiper-pagination');
 
 
 let swiperReviews = new Swiper('.swiper', {
-  modules: [Navigation, Pagination],
+  modules: [ Pagination],
   spaceBetween: 20,
   loop: true,
   autoplay: {
@@ -22,14 +22,12 @@ let swiperReviews = new Swiper('.swiper', {
   pagination: {
       el: '.swiper-pagination',
     clickable: true,
+  
   },
+
   slidesPerView: 1,
   preloadImages: false,
-  lazy: {
-    loadOnTransitionStart: false,
-    loadPrevNext:false,
-
-  },
+ 
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -49,3 +47,15 @@ swiperContainer.addEventListener('mouseover', function () {
 swiperContainer.addEventListener('mouseout', function () {
   swiperReviews.autoplay.start();
 });
+
+
+swiperPagination.addEventListener('focusin', async function (event) {
+  swiperReviews.autoplay.stop();
+  let interval = setTimeout(function () {
+      event.target.blur()
+      swiperReviews.autoplay.start();
+      clearTimeout(interval);
+  }, 1000)
+  
+  
+})
