@@ -27,10 +27,7 @@ let swiperReviews = new Swiper('.swiper', {
 
   slidesPerView: 1,
   preloadImages: false,
-  lazy: {
-    loadOnTransitionStart: false,
-    loadPrevNext:false,
-  },
+ 
   breakpoints: {
     768: {
       slidesPerView: 2,
