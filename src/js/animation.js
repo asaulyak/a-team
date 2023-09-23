@@ -1,16 +1,18 @@
-export const reveal = () => {
-  const sections = document.querySelectorAll('.reveal');
+const sections = document.querySelectorAll('.reveal');
 
-  sections.forEach(section => {
-    const windowHeight = window.innerHeight;
-    const elementTop = section.getBoundingClientRect().top;
-    const elementVisible = windowHeight * 0.2;
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle('active', entry.isIntersecting);
 
-    if (elementTop < windowHeight - elementVisible) {
-      section.classList.add('active');
-    }
-  });
-};
+      if (entry.isIntersecting) observer.unobserve(entry.target);
+    });
+  },
+  {
+    threshold: 0.1,
+  }
+);
 
-window.addEventListener('load', reveal);
-window.addEventListener('scroll', reveal);
+sections.forEach(section => {
+  observer.observe(section);
+});
