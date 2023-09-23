@@ -19,7 +19,7 @@
   text-align: center;
   font-size: 32px;
   font-weight: 700;
-  line-height: 1.12;
+  line-height: 1.13;
   letter-spacing: -0.02em;
   margin-bottom: 16px;
 }
@@ -28,7 +28,6 @@
   .section-title {
     font-size: 40px;
     line-height: 1.2;
-    letter-spacing: -0.02em;
   }
 }
 
@@ -36,16 +35,15 @@
   color: var(--black);
   text-align: center;
   font-size: 32px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 1.12;
+  line-height: 1.13;
   letter-spacing: -0.02em;
 }
 
 @media only screen and (min-width: 768px) {
   .section-title-accent {
     font-size: 40px;
-    line-height: 1.12;
+    line-height: 1.2;
   }
 }
 
@@ -95,7 +93,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .about-list {    
+  .about-list {
     margin-bottom: 0;
   }
 }
@@ -147,7 +145,7 @@
   background: var(--green);
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
