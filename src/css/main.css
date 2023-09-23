@@ -16,6 +16,7 @@
 @import url('./leave-application.css');
 @import url('./reviews.css');
 @import url('./footer.css');
+@import url('./scroll-to-top.css');
 
 :root {
   color: var(--black);
