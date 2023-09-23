@@ -1,0 +1,57 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+
+  background-color: var(--pressed-green);
+  box-shadow: 0 0 0 0 var(--ultra-soft-green);
+
+  transform: scale(1);
+
+  transition: transform var(--animation-fast);
+
+  animation: pulse 2s infinite;
+}
+.scroll-to-top > .scroll-to-bottom-icon {
+  fill: var(--white);
+
+  transform: rotate(0.5turn);
+}
+
+.scroll-to-top:hover,
+.scroll-to-top:focus {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+  background-color: var(--pressed-green);
+  transform: scale(1.05);
+}
+
+.go-top {
+  opacity: 0;
+  z-index: 999;
+
+  transition: opacity var(--animation-fast);
+}
+
+.go-top--show {
+  opacity: 1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 var(--ultra-soft-green);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px var(--ultra-soft-green);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 var(--ultra-soft-green);
+  }
+}
