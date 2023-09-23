@@ -9,7 +9,6 @@ goTopBtn.addEventListener("click", goTop);
 function trackScroll() {
 
     const windowHeight = window.scrollY;
-    console.log(windowHeight)
 
 
   if (windowHeight > 800) {
