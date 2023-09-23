@@ -105,6 +105,7 @@ body {
 }
 
 .section-title-accent {
+  display: inline-block;
   position: relative;
 }
 
@@ -114,16 +115,18 @@ body {
   left: 0;
   bottom: 0;
 
+  height: 12px;
   width: 100%;
 
-  border-bottom: 12px solid var(--soft-green);
+  background-color: var(--soft-green);
+
   border-radius: 8px;
   z-index: -1;
 }
 
 @media only screen and (min-width: 768px) {
   .section-title-accent::after {
-    border-bottom: 20px solid var(--soft-green);
+    height: 20px;
   }
 }
 
