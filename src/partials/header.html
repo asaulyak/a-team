@@ -67,6 +67,48 @@
         </a>
       </li>
     </ul>
+    <!-- Theme toggler -->
+    <div class="switch-theme">
+      <div class="switch-theme-control">
+        <!--  -->
+        <input
+          class="switch-theme-checkbox visually-hidden"
+          type="checkbox"
+          name="theme toggler"
+          id="theme-toggler"
+          aria-label="switch theme"
+        />
+        <label
+          aria-hidden="true"
+          class="switch-theme-track"
+          for="theme-toggler"
+        ></label>
+
+        <div class="switch-theme-ball"></div>
+
+        <svg
+          class="switch-theme-icon"
+          width="12"
+          height="12"
+          id="moon"
+          aria-label="moon icon"
+        >
+          <use href="./img/icons.svg#icon-moon"></use>
+        </svg>
+
+        <svg
+          class="switch-theme-icon"
+          width="12"
+          height="12"
+          id="sun"
+          role="img"
+          aria-label="sun icon"
+        >
+          <use href="./img/icons.svg#icon-sun"></use>
+        </svg>
+      </div>
+    </div>
+
     <!-- Mobile Menu -->
 
     <button
