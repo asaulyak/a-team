@@ -91,7 +91,6 @@
 }
 
 @media only screen and (max-width: 374px) {
-
   .our-lessons-button,
   .our-lessons-secondary-button {
     min-width: auto;
@@ -133,7 +132,7 @@
   }
 
   .our-lessons-item:not(:last-child) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .our-lessons-item:nth-child(2n) {

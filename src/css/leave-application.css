@@ -321,13 +321,19 @@
   }
 }
 
-input[type='radio']:checked+.leave-application-form-radio-label .leave-application-form-radio {
+input[type='radio']:checked
+  + .leave-application-form-radio-label
+  .leave-application-form-radio {
   fill: var(--green);
   border-color: var(--green);
 }
 
-input[type='radio']:checked+.leave-application-form-radio-label:hover .leave-application-form-radio,
-input[type='radio']:checked+.leave-application-form-radio-label:focus .leave-application-form-radio {
+input[type='radio']:checked
+  + .leave-application-form-radio-label:hover
+  .leave-application-form-radio,
+input[type='radio']:checked
+  + .leave-application-form-radio-label:focus
+  .leave-application-form-radio {
   border-color: var(--pressed-green);
 }
 

@@ -70,7 +70,7 @@
 
 @media only screen and (max-width: 374px) {
   .footer-bottom {
-   font-size: 12px;
+    font-size: 12px;
   }
 }
 
@@ -80,7 +80,7 @@
   }
 }
 
-.footer-bottom-item-link{
+.footer-bottom-item-link {
   transition: color var(--animation-fast);
 }
 
@@ -150,7 +150,7 @@
 .footer-list-menu .footer-item:after {
   position: absolute;
   content: '';
-  width: 0px;
+  width: 0;
   height: 2px;
   left: 0;
   bottom: -5px;
