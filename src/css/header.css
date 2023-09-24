@@ -441,7 +441,7 @@ Mobile Menu
 
 /* switch theme */
 
-@media only screen and (max-width: 1279.98px) {
+@media only screen and (min-width: 768px) and (max-width: 1279.98px) {
   .switch-theme {
     flex-grow: 1;
   }
@@ -454,7 +454,6 @@ Mobile Menu
   justify-content: space-between;
   align-items: center;
 
-  margin: 0 30px 0 auto;
   padding: 1px;
 
   height: 15px;
@@ -462,6 +461,11 @@ Mobile Menu
   border-radius: 8px;
 
   background-color: rgba(77, 194, 116, 0.704);
+}
+@media only screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .switch-theme-control {
+    margin: 0 30px 0 auto;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .switch-theme-control {
