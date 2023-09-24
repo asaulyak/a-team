@@ -28,6 +28,58 @@ body {
   overflow-x: hidden;
 }
 
+/* dark theme */
+body.dark-theme {
+  --black: var(--white);
+  --soft-black: var(--medium-white);
+
+  position: relative;
+
+  background-color: rgb(25, 37, 65);
+
+  transition: background-color var(--animation-fast);
+  z-index: -2;
+}
+body.dark-theme .header-nav-link {
+  color: var(--white);
+
+  transition: color var(--animation-fast);
+}
+
+body.dark-theme .header-socials-link {
+  border-color: var(--medium-white);
+  fill: var(--white);
+
+  transition:
+    border-color var(--animation-fast),
+    fill var(--animation-fast);
+}
+body.dark-theme .section-title-accent::after {
+  background-color: var(--green);
+
+  transition: background-color var(--animation-fast);
+}
+body.dark-theme .accent::after {
+  border-color: var(--green);
+
+  transition: border-color var(--animation-fast);
+}
+
+body.dark-theme ol,
+body.dark-theme ul,
+body.dark-theme footer {
+  --black: #121417;
+}
+body.dark-theme ul {
+  --soft-black: rgba(18, 20, 23, 0.5);
+}
+body.dark-theme #teachers ul {
+  --soft-black: var(--medium-white);
+  color: var(--white);
+
+  transition: color var(--animation-fast);
+}
+
 .visually-hidden {
   position: absolute;
   margin: -1px;
