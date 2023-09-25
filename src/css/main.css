@@ -80,6 +80,11 @@ body.dark-theme #teachers ul {
   transition: color var(--animation-fast);
 }
 
+body.dark-theme .leave-application-form-comment,
+body.dark-theme .leave-application-form-input {
+  --black: #121417;
+}
+
 .visually-hidden {
   position: absolute;
   margin: -1px;
