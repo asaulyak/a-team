@@ -188,6 +188,8 @@
   border: 1px solid var(--soft-black);
   outline: none;
 
+  color: var(--black);
+
   resize: none;
 }
 
